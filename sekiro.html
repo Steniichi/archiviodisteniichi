@@ -50,9 +50,20 @@ body {
 }
 
 @media (max-width: 600px) {
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contenuto {
+    flex: 1;
+  }
+
   .about {
     flex-direction: column;
     text-align: center;
+    margin-top: auto; /* 👈 la spinge in fondo */
   }
 }
 
