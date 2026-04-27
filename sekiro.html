@@ -7,6 +7,33 @@
 <link rel="icon" type="image/png" href="img/ember_icon.png">
 
 <style>
+.note-icon-popup {
+  position: absolute;
+  bottom: 30px;
+  left: 45px;
+
+  width: 200px;
+  height: 200px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  z-index: 3;
+}
+
+.note-icon-popup img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  transition: 0.2s;
+}
+
+.note-icon-popup:hover img {
+  transform: scale(1.15);
+}
 .logo {
   text-align: center;
   margin-bottom: 10px;
@@ -231,11 +258,11 @@ input, select {
 }
 
 .note-btn img {
-  width: 80px;
-  height: 80px;
+  width: 82px;
+  height: 82px;
   object-fit: contain;
 
-  transform: translate(-25px, -28px); /* 👈 la centra visivamente */
+  transform: translate(-25px, -27px); /* 👈 la centra visivamente */
   pointer-events: none;
 
   filter: none;
@@ -244,7 +271,7 @@ input, select {
 }
 
 .note-btn:hover img {
-  transform: translate(-25px, -28px) scale(1.15);
+  transform: translate(-25px, -27px) scale(1.15);
 }
 
 .tooltip {
@@ -578,9 +605,12 @@ input, select {
     </div>
 
     <div class="popup-buttons">
-      <button id="showOriginalBtn" class="sekiro-btn">Mostra originale</button>
-      <button id="detailClose" class="sekiro-btn">OK</button>
-    </div>
+  <button id="noteBtn" class="note-icon-popup" style="display:none;">
+  <img src="img/ember_note.png" alt="nota">
+</button>
+  <button id="showOriginalBtn" class="sekiro-btn">Mostra originale</button>
+  <button id="detailClose" class="sekiro-btn">OK</button>
+</div>
   </div>
 </div>
 
@@ -595,6 +625,7 @@ input, select {
 <button class="top-btn" id="topBtn">↑</button>
 
 <script>
+const noteBtn = document.getElementById("noteBtn");
 const traduzioni = [
   {
     categoria: "Oggetti",
@@ -738,6 +769,12 @@ function chiudiNote() {
 }
 
 function apriDettaglio(item) {
+  if (item.note) {
+  noteBtn.style.display = "inline-block";
+  noteBtn.onclick = (e) => apriNote(e, item.note);
+} else {
+  noteBtn.style.display = "none";
+}
   let statoOriginale = false;
 
   detailTitle.textContent = item.nome;
@@ -825,12 +862,6 @@ function mostra() {
             </h3>
           ` : ""}
         </div>
-
-        ${item.note ? `
-          <button class="note-btn" onclick='apriNote(event, ${JSON.stringify(item.note)})'>
-                <img src="img/ember_note.png" alt="nota">
-          </button>
-        ` : ""}
       `;
 
       div.onclick = () => apriDettaglio(item);
