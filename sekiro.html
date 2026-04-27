@@ -450,6 +450,17 @@ input, select {
 const traduzioni = [
   {
     categoria: "Oggetti",
+    nome: "Fushigiri",
+    nomeOriginale: "不死斬り",
+    letturaOriginale: "Fushigiri",
+    nomeVecchio: "Lama Mortale",
+    icona: "img/sekiro_items/emblem.png",
+    descrizioneOriginale: "死なぬ者さえ殺す大太刀<br>その赤き刃は、刀を抜いた者を一度殺す<br>回生の力なくば、不死斬りの主とはなれぬ<br><br>不死斬りならば、<br>蟲憑きにとどめ忍殺をすることができる<br><br>この刀は、長く仙峯寺に秘匿されていた<br>刻まれた銘は、「拝涙」<br>それがこの刀の真の名だ",
+    traduzione: "Un'ōdachi in grado di uccidere persino gli immortali. La lama rossa uccide chiunque la sguaini, perciò, senza il potere della resurrezione, non si può diventare suoi proprietari.<br><br>Con la Fushigiri si può eseguire un assassinio shinobi sugli ospiti dell'insetto.<br><br>Questa katana è rimasta nascosta nel tempio Senpo per molto tempo. Sopra vi è inciso “拝涙” (lacrima venerata), il vero nome della katana.",
+    note: ""
+  },
+  {
+    categoria: "Oggetti",
     nome: "Katashiro",
     nomeOriginale: "形代",
     letturaOriginale: "Katashiro",
@@ -712,9 +723,9 @@ window.onscroll = () => {
   const distanzaDalFondo = pageHeight - (scrollY + windowHeight);
 
   if (distanzaDalFondo < 120) {
-    topBtn.style.bottom = "120px"; // 👈 lo alzi sopra la descrizione
+    topBtn.style.bottom = "120px";
   } else {
-    topBtn.style.bottom = "20px"; // posizione normale
+    topBtn.style.bottom = "20px";
   }
 };
 
