@@ -389,9 +389,11 @@ input, select {
   line-height: 1.55;
   color: #f0e8d8;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.95);
-  max-height: 390px;
+  max-height: 360px;
   overflow-y: auto;
   padding-right: 14px;
+  padding-bottom: 90px;
+  box-sizing: border-box;
 }
 
 .sekiro-text::-webkit-scrollbar {
@@ -676,8 +678,12 @@ function apriDettaglio(item) {
     <p>${item.traduzione || item.note || ""}</p>
   `;
 
-  showOriginalBtn.textContent = "Mostra originale";
+  if (item.descrizioneOriginale) {
   showOriginalBtn.style.display = "inline-block";
+  showOriginalBtn.textContent = "Mostra originale";
+} else {
+  showOriginalBtn.style.display = "none";
+}
 
   showOriginalBtn.onclick = () => {
     statoOriginale = !statoOriginale;

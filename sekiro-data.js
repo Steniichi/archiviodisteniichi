@@ -67,6 +67,17 @@ const traduzioni = [
   },
   {
     categoria: "Tecniche",
+    nome: "Tecnica del burattinaio",
+    nomeOriginale: "傀儡の術",
+    letturaOriginale: "Kairai no jutsu",
+    nomeVecchio: "Ninjutsu del burattinaio",
+    icona: "img/sekiro_items/ninjutsupuppeteer.png",
+    descrizioneOriginale: "忍殺した者を傀儡として操る忍殺忍術<br>形代を消費して、使用する<br><br>この秘術は、本来散るべき命を、<br>一時、この世に押し留める<br><br>そうして傀儡とされた者は、<br>しばしの間、術者のために動こうとする<br>だが、やがて散る定めである",
+    traduzione: "Ninjutsu che manipola chi ha subito un assassinio shinobi come fosse un burattino. Consuma Katashiro con l’uso.<br><br>Questa tecnica segreta trattiene fugacemente in questo mondo le vite che si sarebbero dovute spegnere.<br><br>Chi è stato trasformato in burattino verrà manovrato dall'utilizzatore per breve tempo, ma sarà presto destinato a morire.",
+    note: ""
+  },
+  {
+    categoria: "Tecniche",
     nome: "Tecnica del fumo di sangue",
     nomeOriginale: "血煙の術",
     letturaOriginale: "Chikemuri no jutsu",
@@ -78,20 +89,35 @@ const traduzioni = [
   },
   {
     categoria: "Personaggi",
-    nome: "Lupo",
-    nomeOriginale: "狼",
-    letturaOriginale: "Ōkami",
-    nomeVecchio: "Wolf",
-    icona: "https://via.placeholder.com/96",
-    note: "Protagonista del gioco."
+    nome: "Lupo - Sekiro",
+    nomeOriginale: "狼 - 隻狼",
+    letturaOriginale: "Ōkami - Sekirō",
+    nomeVecchio: "Lupo - Sekiro",
+    icona: "img/sekiro_chara/sekiro.png",
+	descrizioneOriginale: "",
+	traduzione: "Il Lupo, conosciuto anche come Sekiro, è il protagonista del gioco. È uno shinobi al servizio di Kuro, il Miko del Lignaggio del Drago.",
+    note: ""
   },
   {
     categoria: "Luoghi",
-    nome: "Ashina",
-    nomeOriginale: "葦名",
-    letturaOriginale: "Ashina",
-    nomeVecchio: "Ashina",
-    icona: "https://via.placeholder.com/96",
-    note: "Territorio centrale della storia."
+    nome: "Castello di Ashina - Castello principale",
+    nomeOriginale: "葦名城　本城",
+    letturaOriginale: "Ashinajō honjō",
+    nomeVecchio: "Castello Ashina",
+    icona: "img/sekiro_area/ashina_castle.png",
+	descrizioneOriginale: "鬼仏：<br><br>1. 葦名城　本城<br>2. 天守上階　武者侍り<br>3. 天守上階　葦名流伝場<br>4. 天守望楼<br>",
+	traduzione: "Onibotoke:<br><br>1. Castello di Ashina - Castello principale<br>2. Piano superiore del tenshu - Riposo dei guerrieri<br>3. Piano superiore del tenshu -  Denjo dello stile Ashina<br>4. Osservatorio del tenshu<br>",
+    note: ""
+  },
+  {
+    categoria: "Luoghi",
+    nome: "Terre vicine al Castello di Ashina",
+    nomeOriginale: "葦名城　城下",
+    letturaOriginale: "Ashinajō jōka",
+    nomeVecchio: "Dintorni di Ashina",
+    icona: "img/sekiro_area/ashina.png",
+	descrizioneOriginale: "鬼仏：<br><br>1. 荒れ寺<br>2. 葦名城　城下<br>3. 城下外郭　城門路<br>4. 城下外郭　虎口階段<br>5. 橋下の谷<br>6. 大手門の出丸<br>7. 大手門<br>8. 怨嗟の炎",
+	traduzione: "Onibotoke:<br><br>1. Tempio in rovina<br>2. Terre vicine al Castello di Ashina<br>3. Mura esterne delle terre vicine al castello - Strada per il cancello<br>4. Mura esterne delle terre vicine al castello - Scala per la tana della tigre<br>5. Valle sotto al ponte<br>6. Torre protettiva del cancello principale<br>7. Cancello principale<br>8. Fiamme del rancore",
+    note: ""
   }
 ];
