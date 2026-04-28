@@ -540,7 +540,7 @@ input, select {
   <p>Archivio personale delle descrizioni tradotte.</p>
 
   <div class="controls">
-    <input id="search" placeholder="Cerca per nome tradotto, giapponese, lettura o nome vecchio...">
+    <input id="search" placeholder="Cerca per nome tradotto, giapponese o nome vecchio...">
 
     <select id="category">
       <option value="Tutte">Tutte</option>
@@ -714,7 +714,6 @@ function mostra() {
     const matchTesto =
       item.nome.toLowerCase().includes(testo) ||
       item.nomeOriginale.toLowerCase().includes(testo) ||
-      (item.letturaOriginale || "").toLowerCase().includes(testo) ||
       (item.nomeVecchio || "").toLowerCase().includes(testo);
 
     const matchCategoria =
