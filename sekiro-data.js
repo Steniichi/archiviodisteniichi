@@ -45,6 +45,17 @@ const traduzioni = [
   },
   {
     categoria: "Oggetti",
+    nome: "Pietra parassitaria",
+    nomeOriginale: "お宿り石",
+    letturaOriginale: "Oyadori ishi",
+    nomeVecchio: "Pietra del riparo",
+    icona: "img/sekiro_items/shelterstone.png",
+    descrizioneOriginale: "水生村の奥の祭壇に祀られていた石<br><br>源の水を長く飲んでいた者は、<br>体の内に石が宿ることがある<br><br>　お宿りは吉兆ぞ<br>　かぐわしく、輿入れ奉ろう<br>この石は源の香気を生む、香の材料の一つ<br>不死断ちのために、御子が求めるものだ",
+    traduzione: "Una pietra deificata sull'altare che si trova dietro il villaggio Mibu.<br><br>Infesta il corpo di coloro che bevono le Acque della Sorgente da molto tempo.<br><br>“I parassiti sono di buon auspicio. Un dolce profumo va offerto per le processioni nuziali.”<br><br>Questa pietra emana la fragranza della Sorgente ed è uno degli ingredienti dell'incenso. Il Miko la cerca per recidere l'immortalità.",
+    note: "Koshiire (輿入れ) significa letteralmente “entrare nel palanchino”, ma come termine composto indica più precisamente la processione nuziale tradizionale in cui la sposa veniva condotta alla casa dello sposo a bordo di un palanchino. In questo contesto, la “processione nuziale” può essere interpretata come un rito di passaggio analogo: una transizione dal mondo terreno al Palazzo, in cui si abbandona la vita precedente per accedere a una nuova condizione."
+  },
+  {
+    categoria: "Oggetti",
     nome: "Protesi shinobi",
     nomeOriginale: "忍義手",
     letturaOriginale: "Ningishu",
