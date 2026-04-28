@@ -111,13 +111,57 @@ const traduzioni = [
   },
   {
     categoria: "Luoghi",
+    nome: "Monte Kongō",
+    nomeOriginale: "金剛山",
+    letturaOriginale: "Kongōsan",
+    nomeVecchio: "Monte Kongo",
+    icona: "img/sekiro_area/mt_kongo.png",
+	descrizioneOriginale: "鬼仏：<br><br>1. 金剛山　仙峯寺<br>2. 武者侍り<br>3. 境内<br>4. 本堂<br>5. 奥の院<br>6. 谷落ちの洞窟<br>7. 鐘鬼のお堂",
+	traduzione: "Onibotoke:<br><br>1. Tempio Senpō - Monte Kongō<br>2. Shugendō<br>3. Terre del tempio<br>4. Edificio principale del tempio<br>5. Santuario interno<br>6. Grotta della Valle delle Cadute<br>7. Tempio dell'oni della campana",
+    note: ""
+  },
+  {
+    categoria: "Luoghi",
+    nome: "Palazzo della Sorgente",
+    nomeOriginale: "源の宮",
+    letturaOriginale: "Minamoto no miya",
+    nomeVecchio: "Palazzo della Sorgente",
+    icona: "img/sekiro_area/palace.png",
+	descrizioneOriginale: "鬼仏：<br><br>1. 源の宮<br>2. 朱の橋<br>3. 水生の御屋敷<br>4. 花見舞台<br>5. 大桜<br>6. 宮の内裏<br>7. 餌やり場<br>8. 壷の貴人<br>9. 神域",
+	traduzione: "Onibotoke:<br><br>1. Palazzo della Sorgente<br>2. Ponte vermiglio<br>3. Villa di Mibu<br>4. Palco dell'hanami<br>5. Gran sakura<br>6. Dairi del Palazzo<br>7. Luogo in cui nutrire il koi<br>8. Nobile del vaso<br>9. Shin'iki",
+    note: ""
+  },
+  {
+    categoria: "Luoghi",
     nome: "Prigione abbandonata",
     nomeOriginale: "捨て牢",
     letturaOriginale: "Suterō",
     nomeVecchio: "Segrete",
     icona: "img/sekiro_area/dungeon.png",
-	descrizioneOriginale: "鬼仏：<br><br>1. 地下水路<br>2. 天守上階　武者侍り",
+	descrizioneOriginale: "鬼仏：<br><br>1. 地下水路<br>2. 武者侍り",
 	traduzione: "Onibotoke:<br><br>1. Canale sotterraneo<br>2. Luogo in cui buttarsi nella morte",
+    note: ""
+  },
+  {
+    categoria: "Luoghi",
+    nome: "Profondità di Ashina",
+    nomeOriginale: "葦名の底",
+    letturaOriginale: "Ashina no soko",
+    nomeVecchio: "Abissi di Ashina",
+    icona: "img/sekiro_area/depths.png",
+	descrizioneOriginale: "鬼仏：<br><br>1. 葦名の底<br>2. 毒だまり<br>3. 獅子猿のねぐら<br>4. 隠し森<br>5. 水生村<br>6. 水車小屋<br>7. 輿入れの岩戸",
+	traduzione: "Onibotoke:<br><br>1. Profondità di Ashina<br>2. Pantano velenoso<br>3. Tana della Scimmia Leonina<br>4. Foresta nascosta<br>5. Villaggio Mibu<br>6. Mulino ad acqua<br>7. Porta di pietra della processione nuziale",
+    note: ""
+  },
+  {
+    categoria: "Luoghi",
+    nome: "Sponde della Fonte del Drago - Tenuta Hirata",
+    nomeOriginale: "竜泉川端　平田屋敷",
+    letturaOriginale: "Ryūsen kawabata Hirata yashiki",
+    nomeVecchio: "Sponda della Fonte di Drago",
+    icona: "img/sekiro_area/dragonspring.png",
+	descrizioneOriginale: "鬼仏：<br><br>1. 竜泉川端　平田屋敷<br>2. 屋敷通り<br>3. 竹林坂<br>4. 平田屋敷　主殿<br>5. 平田屋敷　渡り廊下<br>6. 平田屋敷　隠し仏殿",
+	traduzione: "Onibotoke:<br><br>1. Sponde della Fonte del Drago - Tenuta Hirata<br>2. Strada della tenuta<br>3. Pendio del bosco di bambù<br>4. Palazzo della tenuta Hirata<br>5. Passaggio tra gli edifici - Tenuta Hirata<br>6. Tempio dei buddha nascosto - Tenuta Hirata",
     note: ""
   },
   {
@@ -129,6 +173,17 @@ const traduzioni = [
     icona: "img/sekiro_area/ashina.png",
 	descrizioneOriginale: "鬼仏：<br><br>1. 荒れ寺<br>2. 葦名城　城下<br>3. 城下外郭　城門路<br>4. 城下外郭　虎口階段<br>5. 橋下の谷<br>6. 大手門の出丸<br>7. 大手門<br>8. 怨嗟の炎",
 	traduzione: "Onibotoke:<br><br>1. Tempio in rovina<br>2. Terre vicine al Castello di Ashina<br>3. Mura esterne delle terre vicine al castello - Strada per il cancello<br>4. Mura esterne delle terre vicine al castello - Scala per la tana della tigre<br>5. Valle sotto al ponte<br>6. Torre protettiva del cancello principale<br>7. Cancello principale<br>8. Fiamme del rancore",
+    note: ""
+  },
+  {
+    categoria: "Luoghi",
+    nome: "Valle delle Cadute",
+    nomeOriginale: "落ち谷",
+    letturaOriginale: "Ochidani",
+    nomeVecchio: "Forra",
+    icona: "img/sekiro_area/sunken.png",
+	descrizioneOriginale: "鬼仏：<br><br>1. 社下の谷<br>2. 落ち谷<br>3. 鉄砲砦<br>4. 落ち谷　奥廊下<br>5. 菩薩谷<br>6. 獅子猿の水場",
+	traduzione: "Onibotoke:<br><br>1. Valle sotto al santuario<br>2. Valle delle Cadute<br>3. Forte dei Fucili<br>4. Passaggio nei recessi della Valle delle Cadute<br>5. Valle dei bosatsu<br>6. Stagno della Scimmia Leonina",
     note: ""
   }
 ];
