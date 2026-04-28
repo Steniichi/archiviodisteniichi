@@ -67,13 +67,13 @@ const traduzioni = [
   },
   {
     categoria: "Tecniche",
-    nome: "Shuriken caricato",
-    nomeOriginale: "手裏剣",
-    letturaOriginale: "Shuriken",
-    nomeVecchio: "Loaded Shuriken",
-    icona: "https://via.placeholder.com/96",
-    descrizioneOriginale: "A Prosthetic Tool fitted with a mechanism to launch shuriken.",
-    traduzione: "Uno strumento prostetico dotato di un meccanismo per lanciare shuriken.",
+    nome: "Tecnica del fumo di sangue",
+    nomeOriginale: "血煙の術",
+    letturaOriginale: "Chikemuri no jutsu",
+    nomeVecchio: "Ninjutsu del fumo di sangue",
+    icona: "img/sekiro_items/ninjutsubloodsmoke.png",
+    descrizioneOriginale: "周囲に血の煙幕を生み出す忍殺忍術<br>形代を消費して、使用する<br><br>これは死をもって為す、忍びの秘術である<br>忍殺した者の血しぶきを血煙へと変え、<br>辺りの敵の眼から逃れることができる<br>その後、さらに殺すかは自在である<br><br>稀な死闘は、忍びを忍びたらしめる<br>ただ殺すのではなく、糧とせよ",
+    traduzione: "Ninjutsu che genera una cortina di fumo col sangue. Consuma Katashiro con l’uso.<br><br>Questa è una tecnica segreta shinobi che sfrutta le uccisioni: trasforma lo spruzzo di sangue della vittima in fumo, permettendo di sfuggire agli occhi dei nemici vicini e di ucciderne altri.<br><br>I rari scontri all'ultimo sangue sono ciò che rendono uno shinobi tale. Non è semplice omicidio, ma nutrimento.",
     note: ""
   },
   {
