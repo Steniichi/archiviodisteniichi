@@ -7,10 +7,16 @@
 <link rel="icon" type="image/png" href="img/ember_icon.png">
 
 <style>
+.no-download {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 .note-icon-popup {
   position: absolute;
-  bottom: 30px;
-  left: 45px;
+  bottom: 60px;
+  left: 50px;
 
   width: 200px;
   height: 200px;
@@ -29,6 +35,9 @@
   object-fit: contain;
 
   transition: 0.2s;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .note-icon-popup:hover img {
@@ -594,6 +603,10 @@ input, select {
 
 <div id="detailOverlay" class="detail-overlay">
   <div class="sekiro-panel">
+    <button id="noteBtn" class="note-icon-popup" style="display:none;">
+      <img src="img/ember_note.png" alt="nota">
+    </button>
+
     <div id="detailTitle" class="sekiro-title"></div>
 
     <div class="sekiro-content">
@@ -605,9 +618,6 @@ input, select {
     </div>
 
     <div class="popup-buttons">
-  <button id="noteBtn" class="note-icon-popup" style="display:none;">
-  <img src="img/ember_note.png" alt="nota">
-</button>
   <button id="showOriginalBtn" class="sekiro-btn">Mostra originale</button>
   <button id="detailClose" class="sekiro-btn">OK</button>
 </div>
@@ -845,7 +855,7 @@ mostra();
 </script>
 
 <div class="about">
-  <img src="img/ember_avatar.png" alt="Avatar">
+  <img src="img/ember_avatar.png" alt="Avatar" class="no-download">
 
   <div class="about-text">
     <h3>Steniichi</h3>

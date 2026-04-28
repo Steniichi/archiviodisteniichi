@@ -6,6 +6,12 @@
 <link rel="icon" type="image/png" href="img/ember_icon.png">
 
 <style>
+.no-download {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -279,7 +285,7 @@ creaBraci();
 </script>
 
 <div class="about">
-  <img src="img/ember_avatar.png" alt="Avatar">
+  <img src="img/ember_avatar.png" alt="Avatar" class="no-download">
   
   <div class="about-text">
     <h3>Steniichi</h3>
