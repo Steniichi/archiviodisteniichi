@@ -40,7 +40,7 @@ const traduzioni = [
     nomeVecchio: "Kusabimaru",
     icona: "img/sekiro_items/kusabimaru.png",
     descrizioneOriginale: "主である竜胤の御子・九郎より授かった刀<br>葦名の庶家である、平田氏に伝わるもの<br><br>失っていたが、再び狼の手に戻った<br><br>楔丸の名には、願いが込められている<br>忍びは人を殺すが定めなれど、<br>一握の慈悲だけは、捨ててはならぬ…<br><br>その願い、時に刃が汲むこともあろうか",
-    traduzione: "Katana donata dal padrone Kuro, il Miko del Lignaggio del Drago. È un oggetto che viene tramandato nel clan Hirata, ramo cadetto degli Ashina.<br><br>Era andata persa, ma ora è ritornata nelle mani del Lupo.<br><br>Nel nome Kusabimaru è racchiuso un desiderio: il destino di uno shinobi è quello di uccidere, ma non deve abbandonare quel briciolo di misericordia che gli rimane...<br><br>Potrà la lama, in certe occasioni, accogliere quel desiderio?",
+    traduzione: "Katana donata dal padrone Kurō, il Miko del Lignaggio del Drago. È un oggetto che viene tramandato nel clan Hirata, ramo cadetto degli Ashina.<br><br>Era andata persa, ma ora è ritornata nelle mani del Lupo.<br><br>Nel nome Kusabimaru è racchiuso un desiderio: il destino di uno shinobi è quello di uccidere, ma non deve abbandonare quel briciolo di misericordia che gli rimane...<br><br>Potrà la lama, in certe occasioni, accogliere quel desiderio?",
     note: "Kusabi (楔) significa “vincolo” o “cuneo” e potrebbe rappresentare un’autocitazione di Hidetaka Miyazaki, già legata al simbolismo dei cunei in opere come il Tempio Cuneale (楔の神殿) in Demon’s Souls e le Cuneoliti (楔石) in Dark Souls. Maru (丸), invece, è un suffisso tradizionale giapponese usato in vari nomi propri o di oggetti."
   },
   {
@@ -85,6 +85,28 @@ const traduzioni = [
     icona: "img/sekiro_items/ninjutsubloodsmoke.png",
     descrizioneOriginale: "周囲に血の煙幕を生み出す忍殺忍術<br>形代を消費して、使用する<br><br>これは死をもって為す、忍びの秘術である<br>忍殺した者の血しぶきを血煙へと変え、<br>辺りの敵の眼から逃れることができる<br>その後、さらに殺すかは自在である<br><br>稀な死闘は、忍びを忍びたらしめる<br>ただ殺すのではなく、糧とせよ",
     traduzione: "Ninjutsu che genera una cortina di fumo col sangue. Consuma Katashiro con l’uso.<br><br>Questa è una tecnica segreta shinobi che sfrutta le uccisioni: trasforma lo spruzzo di sangue della vittima in fumo, permettendo di sfuggire agli occhi dei nemici vicini e di ucciderne altri.<br><br>I rari scontri all'ultimo sangue sono ciò che rendono uno shinobi tale. Non è semplice omicidio, ma nutrimento.",
+    note: ""
+  },
+  {
+    categoria: "Personaggi",
+    nome: "Hanbei, l'immortale",
+    nomeOriginale: "死なず半兵衛",
+    letturaOriginale: "Shinazu Henbei",
+    nomeVecchio: "Hanbei, il Non-morto",
+    icona: "img/sekiro_chara/henbei.png",
+	descrizioneOriginale: "",
+	traduzione: "Vive nei pressi del tempio in rovina e funge da compagno di allenamento per il Lupo, aiutandolo ad affinare le sue tecniche di assassinio, poiché è incapace di morire.",
+    note: ""
+  },
+  {
+    categoria: "Personaggi",
+    nome: "Kurō, il Miko",
+    nomeOriginale: "御子　九郎",
+    letturaOriginale: "Miko Kurō",
+    nomeVecchio: "Kuro, l'Erede Divino",
+    icona: "img/sekiro_chara/kuro.png",
+	descrizioneOriginale: "",
+	traduzione: "Detentore del misterioso potere del Lignaggio del Drago e colui che il Lupo deve proteggere. Fu adottato e cresciuto dal clan Hirata, un ramo cadetto del clan Ashina.",
     note: ""
   },
   {
