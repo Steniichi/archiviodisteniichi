@@ -148,7 +148,7 @@ const traduzioni = [
     nomeOriginale: "幻廊の僧",
     letturaOriginale: "Genrō no sō",
     nomeVecchio: "Monaco delle Sale dell'Illusione",
-    icona: "img/sekiro_chara/illusory_Hall_Monk.webp",
+    icona: "img/sekiro_chara/illusory_hall_monk.webp",
 	descrizioneOriginale: "",
 	traduzione: "Monaco che medita nel corridoio illusorio. A differenza degli altri monaci del tempio Senpō, non si è lasciato corrompere dalla ricerca dell’immortalità.",
     note: ""
