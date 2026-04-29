@@ -93,7 +93,7 @@ const traduzioni = [
     nomeOriginale: "仏師",
     letturaOriginale: "Busshi",
     nomeVecchio: "Scultore",
-    icona: "img/sekiro_chara/Sculptor.webp",
+    icona: "img/sekiro_chara/sculptor.webp",
 	descrizioneOriginale: "",
 	traduzione: "Eremita che vive nel tempio in rovina, dove trascorre il tempo intagliando statue di Buddha nel legno. Salvò il Lupo dopo la sconfitta contro Gen'ichiro e gli donò la sua protesi shinobi.",
     note: ""
