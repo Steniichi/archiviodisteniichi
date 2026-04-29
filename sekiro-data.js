@@ -100,6 +100,17 @@ const traduzioni = [
   },
   {
     categoria: "Personaggi",
+    nome: "Ema, la dottoressa",
+    nomeOriginale: "薬師エマ",
+    letturaOriginale: "Kusushi Ema",
+    nomeVecchio: "Emma la cerusica",
+    icona: "img/sekiro_chara/ema.webp",
+	descrizioneOriginale: "",
+	traduzione: "Quando era ancora bambina, il Busshi la salvò da un campo di battaglia e la affidò a un suo amico, Dogen, che la adottò. Per onorare il suo maestro, intraprese lo studio della medicina, diventando una dottoressa di grande talento.",
+    note: ""
+  },
+  {
+    categoria: "Personaggi",
     nome: "Hanbē, l'immortale",
     nomeOriginale: "死なず半兵衛",
     letturaOriginale: "Shinazu Hanbē",
