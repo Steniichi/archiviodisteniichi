@@ -89,6 +89,17 @@ const traduzioni = [
   },
   {
     categoria: "Personaggi",
+    nome: "Anayama il mercante",
+    nomeOriginale: "物売りの穴山",
+    letturaOriginale: "Monouri no Anayama",
+    nomeVecchio: "Anayama il mercante",
+    icona: "img/sekiro_chara/anayama.webp",
+	descrizioneOriginale: "",
+	traduzione: "Un bandito che il Lupo incontrò alla tenuta Hirata, quando una banda di ladri la razziò. In seguito ha abbandonato quella vita ed è diventato un mercante.",
+    note: ""
+  },
+  {
+    categoria: "Personaggi",
     nome: "Busshi",
     nomeOriginale: "仏師",
     letturaOriginale: "Busshi",
@@ -100,7 +111,7 @@ const traduzioni = [
   },
   {
     categoria: "Personaggi",
-    nome: "Ema, la dottoressa",
+    nome: "Ema la dottoressa",
     nomeOriginale: "薬師エマ",
     letturaOriginale: "Kusushi Ema",
     nomeVecchio: "Emma la cerusica",
