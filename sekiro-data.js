@@ -1,6 +1,17 @@
 const traduzioni = [
   {
     categoria: "Oggetti",
+    nome: "Fiori del Sakura Eterno",
+    nomeOriginale: "常桜の花",
+    letturaOriginale: "Tokozakura no hana",
+    nomeVecchio: "Fiore aromatico",
+    icona: "img/sekiro_items/branch2.png",
+    descrizioneOriginale: "古い記憶の中で咲いていた、常桜の花<br>丈が仙郷の名残として持ち帰り、<br>接いで咲かせた花である<br><br>人返りを望むならば、竜の涙と常桜の花を<br>竜胤の御子に飲ませれば良い<br><br>そして、もう一つ<br>「竜胤の血を受けた不死は、その主を縛る」<br>ゆえにそれを断つことだ",
+    traduzione: "Fiori del Sakura Eterno, sbocciati in un vecchio ricordo. Takeru li prese con sé, come reliquia della Terra Incantata, e li fece fiorire tramite un innesto.<br><br>Se desideri ritornare umano, devi far ingerire la lacrima del Drago e i fiori del Sakura Eterno al Miko del Lignaggio del Drago.<br><br>E un'altra cosa: “L’immortale che ha ricevuto il sangue del Lignaggio del Drago vincola il suo padrone”. Pertanto, quel vincolo dev'essere reciso.",
+    note: ""
+  },
+  {
+    categoria: "Oggetti",
     nome: "Fushigiri",
     nomeOriginale: "不死斬り",
     letturaOriginale: "Fushigiri",
