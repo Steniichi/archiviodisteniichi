@@ -711,7 +711,7 @@ function apriDettaglio(item) {
 
   detailOverlay.classList.add("active");
 }
-
+const categorieAperte = new Set();
 function mostra() {
   const testo = search.value.toLowerCase();
   const categoriaScelta = category.value;
@@ -735,13 +735,29 @@ function mostra() {
     const items = filtrati.filter(item => item.categoria === cat);
     if (items.length === 0) return;
 
-    const titolo = document.createElement("h2");
-    titolo.className = "categoria-titolo";
-    titolo.textContent = cat;
-    contenuto.appendChild(titolo);
+const titolo = document.createElement("h2");
+titolo.className = "categoria-titolo";
+titolo.style.cursor = "pointer";
+titolo.textContent = (categorieAperte.has(cat) ? "▼ " : "▶ ") + cat;
 
-    const lista = document.createElement("div");
-    lista.className = "lista";
+const lista = document.createElement("div");
+lista.className = "lista";
+lista.style.display = categorieAperte.has(cat) ? "flex" : "none";
+
+titolo.onclick = () => {
+  if (categorieAperte.has(cat)) {
+    categorieAperte.delete(cat);
+    lista.style.display = "none";
+    titolo.textContent = "▶ " + cat;
+  } else {
+    categorieAperte.add(cat);
+    lista.style.display = "flex";
+    titolo.textContent = "▼ " + cat;
+  }
+};
+
+contenuto.appendChild(titolo);
+contenuto.appendChild(lista);
 
     items.forEach(item => {
       const div = document.createElement("div");
@@ -765,8 +781,6 @@ function mostra() {
 
       lista.appendChild(div);
     });
-
-    contenuto.appendChild(lista);
   });
 }
 
@@ -822,7 +836,7 @@ mostra();
   <div class="about-text">
     <h3>Steniichi</h3>
     <p>
-      Studio la lingua giapponese e, per passione, mi dedico alla traduzione di diversi tipi di media. Il mio obiettivo è rendere i contenuti non solo comprensibili, ma anche il più possibile fedeli al significato originale. Ho creato questo sito per raccogliere e condividere tutti i miei lavori, offrendo un punto di riferimento per chi è interessato a traduzioni curate e attente ai dettagli.
+      Studio la lingua giapponese e, per passione, mi dedico alla traduzione di diversi tipi di media. Il mio obiettivo è rendere i contenuti non solo comprensibili, ma anche il più possibile fedeli al significato originale. Ho creato questo sito per raccogliere e condividere tutti i miei lavori, offrendo un punto di riferimento per chi è interessato a traduzioni curate e attente ai dettagli. Questo personaggino a sinistra, invece, è Ember e vi darà informazioni aggiuntive quando necessario.
     </p>
   </div>
 </div>
