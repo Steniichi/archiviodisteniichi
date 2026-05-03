@@ -66,6 +66,17 @@ const traduzioni = [
     note: "Il karakuri è un’antica arte meccanica giapponese che raggiunse il suo massimo sviluppo durante il periodo Edo (1603-1868). Si basa su meccanismi nascosti, spesso molto complessi e ingegnosi. Un esempio emblematico sono le karakuri ningyō, tradizionali bambole meccaniche capaci di svolgere azioni sorprendenti, come servire il tè, scoccare frecce o persino scrivere kanji."
   },
   {
+    categoria: "Oggetti",
+    nome: "Ramo fragrante del Sakura Eterno",
+    nomeOriginale: "常桜の香木",
+    letturaOriginale: "Tokozakura no kōboku",
+    nomeVecchio: "Ramo aromatico",
+    icona: "img/sekiro_items/branch1.png",
+    descrizioneOriginale: "常桜の乾いた香木<br>義父が手折り、持っていたもの<br><br>常桜は、望郷の桜<br>この枝に、かつて咲いていた花を眺め、<br>丈は仙郷に想いをはせたのだろう<br><br>この香木は源の香気を生む、香の材料の一つ<br>不死断ちのために、御子が求めるものだ",
+    traduzione: "Ramo profumato e secco del Sakura Eterno, reciso dal padre adottivo del Lupo.<br><br>Il Sakura Eterno, un sakura della nostalgia. Ammirando i fiori che un tempo sbocciavano su questo ramo, Takeru forse pensava alla Terra Incantata.<br><br>Questo ramo profumato emana la fragranza della Sorgente ed è uno degli ingredienti dell'incenso. Il Miko lo cerca per recidere l'immortalità.",
+    note: ""
+  },
+  {
     categoria: "Tecniche",
     nome: "Tecnica del burattinaio",
     nomeOriginale: "傀儡の術",
@@ -96,6 +107,17 @@ const traduzioni = [
     icona: "img/sekiro_chara/anayama.webp",
 	descrizioneOriginale: "",
 	traduzione: "Un bandito che il Lupo incontrò alla tenuta Hirata, quando una banda di ladri la razziò. In seguito ha abbandonato quella vita ed è diventato un mercante.",
+    note: ""
+  },
+  {
+    categoria: "Personaggi",
+    nome: "Kensei Ashina Isshin",
+    nomeOriginale: "剣聖　葦名一心",
+    letturaOriginale: "Kensei Ashina Isshin",
+    nomeVecchio: "Isshin, il Maestro",
+    icona: "img/sekiro_chara/isshin.webp",
+	descrizioneOriginale: "",
+	traduzione: "Il più grande guerriero del Giappone. Ha dedicato la sua vita a perfezionare la sua tecnica di spada, continuando a uccidere.",
     note: ""
   },
   {
@@ -173,6 +195,17 @@ const traduzioni = [
     icona: "img/sekiro_chara/campo.webp",
 	descrizioneOriginale: "",
 	traduzione: "Membro dei Commemoranti, dediti alla vendita di offerte rituali per i defunti.",
+    note: ""
+  },
+  {
+    categoria: "Personaggi",
+    nome: "Dōjun",
+    nomeOriginale: "道順",
+    letturaOriginale: "Dōjun",
+    nomeVecchio: "Doujun",
+    icona: "img/sekiro_chara/dojun.webp",
+	descrizioneOriginale: "",
+	traduzione: "",
     note: ""
   },
   {
@@ -294,6 +327,17 @@ const traduzioni = [
     icona: "img/sekiro_chara/tasso.webp",
 	descrizioneOriginale: "",
 	traduzione: "Fuggitivo dei Kasa Neri.",
+    note: ""
+  },
+  {
+    categoria: "Personaggi",
+    nome: "Tengu di Ashina",
+    nomeOriginale: "葦名の天狗",
+    letturaOriginale: "Ashina no tengu",
+    nomeVecchio: "Tengu di Ashina",
+    icona: "img/sekiro_chara/tengu.webp",
+	descrizioneOriginale: "",
+	traduzione: "Misterioso guerriero che stermina le forze del Ministero dell’Interno infiltratesi ad Ashina.",
     note: ""
   },
   {
