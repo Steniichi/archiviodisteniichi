@@ -107,7 +107,7 @@ const traduzioni = [
     icona: "img/sekiro_chara/sculptor.webp",
 	descrizioneOriginale: "",
 	traduzione: "Eremita che vive nel tempio in rovina, dove trascorre il tempo intagliando statue di Buddha nel legno. Salvò il Lupo dopo la sconfitta contro Gen'ichiro e gli donò la sua protesi shinobi.",
-    note: ""
+    note: "I busshi sono artigiani specializzati nella realizzazione di statue e sculture sacre, in particolare raffiguranti il Buddha e altre divinità del Buddhismo."
   },
   {
     categoria: "Personaggi",
