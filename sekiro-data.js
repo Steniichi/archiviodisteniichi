@@ -210,6 +210,28 @@ const traduzioni = [
   },
   {
     categoria: "Personaggi",
+    nome: "Harunaga, nobile del vaso",
+    nomeOriginale: "壷の貴人　春長",
+    letturaOriginale: "Tsuba no kijin Harunaga",
+    nomeVecchio: "Harunaga, nobile del vaso",
+    icona: "img/sekiro_chara/harunaga.webp",
+	descrizioneOriginale: "",
+	traduzione: "Fu esiliato dal Palazzo della Sorgente perché la sua ossessione di diventare un koi lo spinse a tentare di uccidere il Nushi koi.",
+    note: ""
+  },
+  {
+    categoria: "Personaggi",
+    nome: "Koremori, nobile del vaso",
+    nomeOriginale: "壷の貴人　維盛",
+    letturaOriginale: "Tsuba no kijin Koremori",
+    nomeVecchio: "Koremori, nobile del vaso",
+    icona: "img/sekiro_chara/koremori.webp",
+	descrizioneOriginale: "",
+	traduzione: "Vive nel Palazzo della Sorgente ed è ossessionato dal desiderio di diventare un koi, al punto da tramare per uccidere il Nushi koi.",
+    note: ""
+  },
+  {
+    categoria: "Personaggi",
     nome: "Kurō il Miko",
     nomeOriginale: "御子　九郎",
     letturaOriginale: "Miko Kurō",
