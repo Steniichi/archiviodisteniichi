@@ -88,12 +88,12 @@ const traduzioni = [
     note: "Il karakuri è un’antica arte meccanica giapponese che raggiunse il suo massimo sviluppo durante il periodo Edo (1603-1868). Si basa su meccanismi nascosti, spesso molto complessi e ingegnosi. Un esempio emblematico sono le karakuri ningyō, tradizionali bambole meccaniche capaci di svolgere azioni sorprendenti, come servire il tè, scoccare frecce o persino scrivere kanji."
   },
   {
-    categoria: "Oggetti",
+    categoria: "Armi",
     nome: "Ramo fragrante del Sakura Eterno",
     nomeOriginale: "常桜の香木",
     letturaOriginale: "Tokozakura no kōboku",
     nomeVecchio: "Ramo aromatico",
-    icona: "img/sekiro_items/branch1.png",
+    icona: "img/demons_weapons/Great_Axe.webp",
     descrizioneOriginale: "常桜の乾いた香木<br>義父が手折り、持っていたもの<br><br>常桜は、望郷の桜<br>この枝に、かつて咲いていた花を眺め、<br>丈は仙郷に想いをはせたのだろう<br><br>この香木は源の香気を生む、香の材料の一つ<br>不死断ちのために、御子が求めるものだ",
     traduzione: "Ramo profumato e secco del Sakura Eterno, reciso dal padre adottivo del Lupo.<br><br>Il Sakura Eterno, un sakura della nostalgia. Ammirando i fiori che un tempo sbocciavano su questo ramo, Takeru forse pensava alla Terra Incantata.<br><br>Questo ramo profumato emana la fragranza della Sorgente ed è uno degli ingredienti dell'incenso. Il Miko lo cerca per recidere l'immortalità.",
     note: ""

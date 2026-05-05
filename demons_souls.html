@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Steniichi Bunko - Demon's Souls</title>
+
+<link rel="icon" type="image/png" href="img/ember_icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+.no-download {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.note-icon-popup {
+  position: absolute;
+  bottom: 80px;
+  left: 75px;
+
+  width: 140px;
+  height: 140px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  z-index: 3;
+}
+
+.note-icon-popup img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translateY(2px);
+
+  transition: 0.2s;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.note-icon-popup:hover img {
+  transform: scale(1.5);
+}
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    max-width: 280px;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background: url("img/demons_souls_background.webp") no-repeat center center fixed;
+  background-size: cover;
+  color: #d8c7aa;
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.6px;
+}
+
+.about {
+  margin-top: auto;
+  padding: 20px;
+
+  background: rgba(7,6,5,0.86);
+  border: 1px solid #75684f;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about img {
+  width: 70px;
+  height: 80px;
+  border-radius: 0px;
+  object-fit: cover;
+  border: 0px solid #c8b083;
+}
+
+.about-text h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.about-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #b7a98f;
+}
+
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
+  }
+}
+
+.ash {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+
+  background:
+    radial-gradient(circle at center,
+      rgba(120,125,115,0.22) 0%,
+      rgba(70,75,68,0.16) 45%,
+      transparent 75%);
+
+  border-radius: 50%;
+
+  opacity: 0.5;
+
+  will-change: transform, opacity;
+
+  animation:
+    fogCloudMove linear infinite;
+}
+
+@keyframes fogCloudMove {
+  0% {
+    transform: translate3d(0, 20vh, 0) scale(0.9);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translate3d(4vw, -10vh, 0) scale(1.05);
+  }
+
+  85% {
+    opacity: 0.45;
+  }
+
+  100% {
+    transform: translate3d(-3vw, -55vh, 0) scale(1.15);
+    opacity: 0;
+  }
+}
+
+@keyframes fogMorph {
+  0% {
+    border-radius: 45% 55% 60% 40% / 55% 45% 55% 45%;
+    filter: blur(18px);
+  }
+
+  50% {
+    border-radius: 60% 40% 45% 55% / 40% 60% 45% 55%;
+    filter: blur(24px);
+  }
+
+  100% {
+    border-radius: 50% 50% 35% 65% / 60% 40% 60% 40%;
+    filter: blur(20px);
+  }
+}
+
+.page {
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 80px);
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 35px 25px;
+  background: rgba(7,6,5,0.84);
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+
+  flex: 0 0 auto;
+}
+
+@media (max-width: 700px) {
+  .page {
+    width: calc(100% - 30px);
+  }
+}
+
+.home-btn {
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #7a6446;
+  color: #d8c7aa;
+  cursor: pointer;
+}
+
+input, select {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 25px;
+  background: #15120e;
+  color: #d8c7aa;
+  border: 1px solid #75684f;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 15px;
+  position: sticky;
+  top: 10px;
+  z-index: 5;
+}
+
+.categoria-titolo {
+  margin-top: 30px;
+  color: #c8b083;
+  border-bottom: 1px solid #75684f;
+  padding-bottom: 8px;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(18,15,12,0.95);
+  border: 1px solid #4a4031;
+  border-radius: 14px;
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.item-row:hover {
+  border-color: #c8b083;
+  transform: translateX(4px);
+}
+
+.item-row img {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h2 {
+  margin: 0;
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 22px;
+  letter-spacing: 0.4px;
+}
+
+.item-info h3 {
+  margin: 4px 0 0;
+  color: #b7a98f;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip:hover::after {
+  content: attr(data-lettura);
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #0b0907;
+  color: #c8b083;
+  border: 1px solid #75684f;
+  border-radius: 8px;
+  padding: 6px 10px;
+  white-space: nowrap;
+  z-index: 9999;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5,4,3,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  transition: transform 0.15s ease;
+  cursor: zoom-in;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.82);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+.detail-overlay.active {
+  display: flex;
+}
+
+.sekiro-panel {
+  width: min(880px, 95vw);
+  height: min(660px, 90vh);
+  background:
+    linear-gradient(90deg, rgba(7,6,5,0.92), rgba(35,31,25,0.86) 48%, rgba(8,7,6,0.94)),
+    radial-gradient(circle at 55% 45%, rgba(153,139,112,0.20), transparent 48%);
+  color: #d8c7aa;
+  border: 2px solid #5b5141;
+  box-shadow:
+    0 0 70px rgba(0,0,0,0.98),
+    inset 0 0 90px rgba(0,0,0,0.84),
+    inset 0 0 0 1px rgba(199,180,139,0.22);
+  position: relative;
+  padding: 34px 44px 86px;
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  box-sizing: border-box;
+  animation: popupIn 0.22s ease;
+}
+
+.sekiro-panel::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(199,180,139,0.28);
+  pointer-events: none;
+}
+
+.sekiro-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.5), transparent 20%, transparent 80%, rgba(0,0,0,0.5)),
+    linear-gradient(rgba(0,0,0,0.35), transparent 25%, transparent 75%, rgba(0,0,0,0.45));
+  pointer-events: none;
+}
+
+.sekiro-title {
+  position: relative;
+  z-index: 1;
+  height: 62px;
+  background: linear-gradient(90deg, transparent, rgba(5,4,3,0.86), transparent);
+  color: #e6dcc6;
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow:
+    1px 1px 2px #000,
+    0 0 7px rgba(0,0,0,0.85);
+  margin-bottom: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sekiro-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 34px;
+}
+
+.sekiro-icon-box {
+  width: 170px;
+  height: 170px;
+  background:
+    radial-gradient(circle, #302b23, #070605 72%);
+  border: 1px solid #5b5141;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    inset 0 0 35px black,
+    0 0 18px rgba(0,0,0,0.7);
+}
+
+.sekiro-icon-box img {
+  max-width: 125px;
+  max-height: 125px;
+  cursor: zoom-in;
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.8));
+}
+
+.sekiro-text {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 25px;
+  line-height: 1.48;
+  letter-spacing: 0.45px;
+  color: #e6dcc6;
+  text-shadow:
+    1px 1px 2px #000,
+    0 0 7px rgba(0,0,0,0.85);
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 14px;
+  padding-bottom: 90px;
+  box-sizing: border-box;
+}
+
+.sekiro-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sekiro-text::-webkit-scrollbar-thumb {
+  background: #7a6446;
+  border-radius: 10px;
+}
+
+.popup-buttons {
+  position: absolute;
+  z-index: 2;
+  bottom: 26px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sekiro-btn {
+  min-width: 150px;
+  padding: 8px 26px;
+  border: 1px solid rgba(199,180,139,0.28);
+  color: #d8c7aa;
+  font-size: 20px;
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.8px;
+  background: linear-gradient(90deg, transparent, #2a241c, #5b5141, #2a241c, transparent);
+  cursor: pointer;
+  text-shadow: 1px 1px 3px black;
+}
+
+.sekiro-btn:hover {
+  filter: brightness(1.25);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popupIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 700px) {
+  .sekiro-content {
+    grid-template-columns: 1fr;
+  }
+
+  .sekiro-icon-box {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+  }
+
+  .sekiro-title {
+    font-size: 24px;
+  }
+
+  .sekiro-text {
+    font-size: 20px;
+  }
+}
+
+.note-box {
+  width: min(520px, 90vw);
+  background:
+    radial-gradient(circle at center, rgba(255,230,180,0.14), transparent 45%),
+    linear-gradient(135deg, #2c261e, #0d0b09 70%);
+  color: #d8c7aa;
+  border: 2px solid #5b5141;
+  box-shadow:
+    0 0 45px rgba(0,0,0,0.95),
+    inset 0 0 60px rgba(0,0,0,0.75);
+  border-radius: 0;
+  padding: 28px 34px;
+  text-align: center;
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  position: relative;
+  z-index: 1001;
+}
+
+.note-box::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(199,180,139,0.28);
+  pointer-events: none;
+}
+
+.note-box h2 {
+  margin-top: 0;
+  color: #d8c7aa;
+  text-shadow: 2px 2px 4px black;
+}
+
+.note-box p {
+  line-height: 1.55;
+  font-size: 22px;
+  letter-spacing: 0.45px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+}
+
+.top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: #5b5141;
+  color: #d8c7aa;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+@media (max-width: 700px) {
+  .controls, .sekiro-content {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="ash"></div>
+
+<div class="page">
+  <h1 class="logo">
+  <img src="img/demons_souls.png" alt="Demon's Souls">
+</h1>
+  <button class="home-btn" onclick="goHome()">← Home</button>
+  <p>Traduzione: Steniichi<br>Mod di traduzione: Prossimamente</p>
+
+  <div class="controls">
+    <input id="search" placeholder="Cerca per nome tradotto, giapponese o nome vecchio...">
+
+    <select id="category">
+      <option value="Tutte">Tutte</option>
+      <option value="Oggetti">Oggetti</option>
+	  <option value="Armi">Armi</option>
+      <option value="Armature">Armature</option>
+      <option value="Magie e Miracoli">Magie e Miracoli</option>
+      <option value="Personaggi">Personaggi</option>
+      <option value="Luoghi">Luoghi</option>
+    </select>
+  </div>
+
+  <div id="contenuto"></div>
+</div>
+
+<div id="overlay" class="overlay">
+  <img id="overlay-img">
+</div>
+
+<div id="detailOverlay" class="detail-overlay">
+  <div class="sekiro-panel">
+    <button id="noteBtn" class="note-icon-popup" style="display:none;">
+      <img src="img/ember_note.png" alt="nota">
+    </button>
+
+    <div id="detailTitle" class="sekiro-title"></div>
+
+    <div class="sekiro-content">
+      <div class="sekiro-icon-box">
+        <img id="detailImg">
+      </div>
+
+      <div id="detailText" class="sekiro-text"></div>
+    </div>
+
+    <div class="popup-buttons">
+  <button id="showOriginalBtn" class="sekiro-btn">Mostra originale</button>
+  <button id="detailClose" class="sekiro-btn">OK</button>
+</div>
+  </div>
+</div>
+
+<div id="noteOverlay" class="overlay">
+  <div class="note-box" onclick="event.stopPropagation()">
+    <h2>Nota</h2>
+    <p id="noteText"></p>
+    <button class="sekiro-btn" onclick="chiudiNote()">OK</button>
+  </div>
+</div>
+
+<button class="top-btn" id="topBtn">↑</button>
+<script src="demons-souls-data.js"></script>
+<script>
+const noteBtn = document.getElementById("noteBtn");
+
+const contenuto = document.getElementById("contenuto");
+const search = document.getElementById("search");
+const category = document.getElementById("category");
+const overlay = document.getElementById("overlay");
+const overlayImg = document.getElementById("overlay-img");
+const topBtn = document.getElementById("topBtn");
+const ash = document.querySelector(".ash");
+
+const detailOverlay = document.getElementById("detailOverlay");
+const detailTitle = document.getElementById("detailTitle");
+const detailImg = document.getElementById("detailImg");
+const detailText = document.getElementById("detailText");
+const detailClose = document.getElementById("detailClose");
+const showOriginalBtn = document.getElementById("showOriginalBtn");
+
+const noteOverlay = document.getElementById("noteOverlay");
+const noteText = document.getElementById("noteText");
+
+let zoom = 1;
+
+function goHome() {
+  window.location.href = "index.html";
+}
+
+function resetZoom() {
+  zoom = 1;
+  overlayImg.style.transform = "scale(1)";
+}
+
+overlayImg.onwheel = (event) => {
+  event.preventDefault();
+
+  zoom += event.deltaY < 0 ? 0.1 : -0.1;
+  zoom = Math.max(0.5, Math.min(zoom, 4));
+
+  overlayImg.style.transform = `scale(${zoom})`;
+};
+
+function apriNote(event, testo) {
+  event.stopPropagation();
+  noteText.textContent = testo;
+  noteOverlay.classList.add("active");
+}
+
+function chiudiNote() {
+  noteOverlay.classList.remove("active");
+}
+
+function apriDettaglio(item) {
+  if (item.note) {
+  noteBtn.style.display = "inline-block";
+  noteBtn.onclick = (e) => apriNote(e, item.note);
+} else {
+  noteBtn.style.display = "none";
+}
+  let statoOriginale = false;
+
+  detailTitle.textContent = item.nome;
+  detailImg.src = item.icona;
+
+  detailText.innerHTML = `
+    <p>${item.traduzione || item.note || ""}</p>
+  `;
+
+  if (item.descrizioneOriginale) {
+  showOriginalBtn.style.display = "inline-block";
+  showOriginalBtn.textContent = "Mostra originale";
+} else {
+  showOriginalBtn.style.display = "none";
+}
+
+  showOriginalBtn.onclick = () => {
+    statoOriginale = !statoOriginale;
+
+    if (statoOriginale) {
+      detailTitle.textContent = item.nomeOriginale || item.nome;
+      detailText.innerHTML = `
+        <p>${item.descrizioneOriginale || item.nomeVecchio || item.nomeOriginale || ""}</p>
+      `;
+      showOriginalBtn.textContent = "Mostra traduzione";
+    } else {
+      detailTitle.textContent = item.nome;
+      detailText.innerHTML = `
+        <p>${item.traduzione || item.note || ""}</p>
+      `;
+      showOriginalBtn.textContent = "Mostra originale";
+    }
+  };
+
+  detailImg.onclick = () => {
+    overlay.classList.add("active");
+    overlayImg.src = item.icona;
+    resetZoom();
+  };
+
+  detailOverlay.classList.add("active");
+}
+const categorieAperte = new Set();
+function mostra() {
+  const testo = search.value.toLowerCase();
+  const categoriaScelta = category.value;
+
+  const filtrati = traduzioni.filter(item => {
+    const matchTesto =
+      item.nome.toLowerCase().includes(testo) ||
+      item.nomeOriginale.toLowerCase().includes(testo) ||
+      (item.nomeVecchio || "").toLowerCase().includes(testo);
+
+    const matchCategoria =
+      categoriaScelta === "Tutte" ||
+      item.categoria === categoriaScelta ||
+      (categoriaScelta === "Magie e Miracoli" && item.categoria === "Tecniche");
+
+    return matchTesto && matchCategoria;
+  });
+
+  const categorie = [
+    { valore: "Oggetti", titolo: "Oggetti", alias: [] },
+	{ valore: "Armi", titolo: "Armi", alias: [] },
+    { valore: "Armature", titolo: "Armature", alias: [] },
+    { valore: "Magie e Miracoli", titolo: "Magie e Miracoli", alias: ["Tecniche"] },
+    { valore: "Personaggi", titolo: "Personaggi", alias: [] },
+    { valore: "Luoghi", titolo: "Luoghi", alias: [] }
+  ];
+  contenuto.innerHTML = "";
+
+  categorie.forEach(cat => {
+    const items = filtrati.filter(item => item.categoria === cat.valore || cat.alias.includes(item.categoria));
+    if (items.length === 0) return;
+
+const titolo = document.createElement("h2");
+titolo.className = "categoria-titolo";
+titolo.style.cursor = "pointer";
+titolo.textContent = (categorieAperte.has(cat.valore) ? "▼ " : "▶ ") + cat.titolo;
+
+const lista = document.createElement("div");
+lista.className = "lista";
+lista.style.display = categorieAperte.has(cat.valore) ? "flex" : "none";
+
+titolo.onclick = () => {
+  if (categorieAperte.has(cat.valore)) {
+    categorieAperte.delete(cat.valore);
+    lista.style.display = "none";
+    titolo.textContent = "▶ " + cat.titolo;
+  } else {
+    categorieAperte.add(cat.valore);
+    lista.style.display = "flex";
+    titolo.textContent = "▼ " + cat.titolo;
+  }
+};
+
+contenuto.appendChild(titolo);
+contenuto.appendChild(lista);
+
+    items.forEach(item => {
+      const div = document.createElement("div");
+      div.className = "item-row";
+
+      div.innerHTML = `
+        <img src="${item.icona}" alt="${item.nome}">
+        <div class="item-info">
+          <h2>${item.nome}</h2>
+          ${item.nomeOriginale ? `
+            <h3>
+              <span class="tooltip" data-lettura="${item.letturaOriginale || 'Lettura non inserita'}">
+                ${item.nomeOriginale}
+              </span>
+            </h3>
+          ` : ""}
+        </div>
+      `;
+
+      div.onclick = () => apriDettaglio(item);
+
+      lista.appendChild(div);
+    });
+  });
+}
+
+overlay.onclick = () => {
+  overlay.classList.remove("active");
+  resetZoom();
+};
+
+noteOverlay.onclick = chiudiNote;
+
+detailOverlay.onclick = (event) => {
+  if (event.target === detailOverlay) {
+    detailOverlay.classList.remove("active");
+  }
+};
+
+detailClose.onclick = () => {
+  detailOverlay.classList.remove("active");
+};
+
+window.onscroll = () => {
+  const scrollY = window.scrollY;
+  const pageHeight = document.body.scrollHeight;
+  const windowHeight = window.innerHeight;
+
+  // mostra il bottone
+  topBtn.style.display = scrollY > 250 ? "block" : "none";
+
+  // distanza dal fondo
+  const distanzaDalFondo = pageHeight - (scrollY + windowHeight);
+
+  if (distanzaDalFondo < 120) {
+    topBtn.style.bottom = "120px";
+  } else {
+    topBtn.style.bottom = "20px";
+  }
+};
+
+topBtn.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+search.oninput = mostra;
+category.onchange = mostra;
+
+mostra();
+
+function creaNebbia() {
+
+  for (let i = 0; i < 10; i++) {
+
+    const p = document.createElement("div");
+    p.className = "particle";
+
+    const size = 500 + Math.random() * 400;
+
+    p.style.width = size + "px";
+    p.style.height = size * 0.45 + "px";
+
+    p.style.left = Math.random() * 100 + "vw";
+    p.style.top = (85 + Math.random() * 20) + "vh";
+
+    p.style.animationDuration =
+      (70 + Math.random() * 40) + "s";
+
+    p.style.animationDelay =
+      (-Math.random() * 100) + "s";
+
+    ash.appendChild(p);
+  }
+}
+creaNebbia();
+</script>
+
+<div class="about">
+  <img src="img/ember_avatar.png" alt="Avatar" class="no-download">
+
+  <div class="about-text">
+    <h3>Steniichi</h3>
+    <p>
+      Studio la lingua giapponese e, per passione, mi dedico alla traduzione di diversi tipi di media. Il mio obiettivo è rendere i contenuti non solo comprensibili, ma anche il più possibile fedeli al significato originale. Ho creato questo sito per raccogliere e condividere tutti i miei lavori, offrendo un punto di riferimento per chi è interessato a traduzioni curate e attente ai dettagli. Questo personaggino a sinistra, invece, è Ember e vi darà informazioni aggiuntive quando necessario.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
