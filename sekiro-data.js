@@ -51,8 +51,7 @@ const traduzioni = [
     nomeVecchio: "Emblema spiritico",
     icona: "img/sekiro_items/emblem.png",
     descrizioneOriginale: "ただよう白い形代<br><br>人に限ったことではないが、<br>何か心残りがあれば、その想いが<br>幻として形を取って見えることがある<br><br>義手忍具など、形代を消費することで<br>使えるアクションがある",
-    traduzione: "Katashiro bianco e fluttuante.<br><br>Se permane qualche forma di rimpianto, esso può assumere una forma fugace ma visibile. Non è un fenomeno esclusivo degli esseri umani.<br><br>Alcune azioni richiedono il consumo di Katashiro, come l’uso degli strumenti shinobi protesici.",
-    note: "I katashiro sono bambole di carta utilizzate nei rituali shintoisti come sostituti simbolici degli esseri umani, su cui vengono trasferiti peccati e impurità (kegare)."
+    traduzione: `<span class="note-link" onclick="notaInline('I katashiro sono bambole di carta utilizzate nei rituali shintoisti come sostituti simbolici degli esseri umani, su cui vengono trasferiti peccati e impurità (kegare).')">Katashiro</span> bianco e fluttuante.<br><br>Se permane qualche forma di rimpianto, esso può assumere una forma fugace ma visibile. Non è un fenomeno esclusivo degli esseri umani.<br><br>Alcune azioni richiedono il consumo di Katashiro, come l’uso degli strumenti shinobi protesici.`,
   },
   {
     categoria: "Oggetti",
@@ -127,7 +126,7 @@ const traduzioni = [
     letturaOriginale: "Monouri no Anayama",
     nomeVecchio: "Anayama il mercante",
     icona: "img/sekiro_chara/anayama.webp",
-	descrizioneOriginale: "ss",
+	descrizioneOriginale: "",
 	traduzione: "Un bandito che il Lupo incontrò alla tenuta Hirata, quando una banda di ladri la razziò. In seguito ha abbandonato quella vita ed è diventato un mercante.",
     note: ""
   },
