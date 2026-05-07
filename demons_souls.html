@@ -11,43 +11,81 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
+.note-link {
+  color: #c8b083;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.note-link:hover {
+  color: #e6dcc6;
+}
+.dialoghi-personaggio::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dialoghi-personaggio::-webkit-scrollbar-track {
+  background: rgba(7,6,5,0.45);
+}
+
+.dialoghi-personaggio::-webkit-scrollbar-thumb {
+  background: #7a6446;
+  border-radius: 10px;
+}
+.dialoghi-personaggio {
+  scrollbar-width: thin;
+  scrollbar-color: #7a6446 rgba(7,6,5,0.45);
+}
+.sekiro-panel.personaggio-panel {
+  width: min(1100px, 96vw);
+  height: min(820px, 94vh);
+}
+.sekiro-panel.personaggio-panel .sekiro-content {
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+}
+.sekiro-panel.personaggio-panel .sekiro-text {
+  max-height: 560px;
+}
+.sekiro-panel.personaggio-panel .sekiro-icon-box {
+  width: 105px;
+  height: 105px;
+}
+
+.sekiro-panel.personaggio-panel .sekiro-icon-box img {
+  max-width: 82px;
+  max-height: 82px;
+}
+
+.dialoghi-personaggio {
+  padding-right: 4px;
+}
+
+.dialogo-blocco {
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(199,180,139,0.22);
+}
+
+.dialogo-blocco h3 {
+  margin: 0 0 8px;
+  color: #c8b083;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.dialogo-blocco p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.45;
+  color: #e6dcc6;
+}
 .no-download {
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
 }
 
-.note-icon-popup {
-  position: absolute;
-  bottom: 80px;
-  left: 75px;
-
-  width: 140px;
-  height: 140px;
-
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-
-  z-index: 3;
-}
-
-.note-icon-popup img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transform: translateY(2px);
-
-  transition: 0.2s;
-  pointer-events: none;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-.note-icon-popup:hover img {
-  transform: scale(1.5);
-}
 .logo {
   text-align: center;
   margin-bottom: 10px;
@@ -632,9 +670,6 @@ input, select {
 
 <div id="detailOverlay" class="detail-overlay">
   <div class="sekiro-panel">
-    <button id="noteBtn" class="note-icon-popup" style="display:none;">
-      <img src="img/ember_note.png" alt="nota">
-    </button>
 
     <div id="detailTitle" class="sekiro-title"></div>
 
@@ -664,8 +699,6 @@ input, select {
 <button class="top-btn" id="topBtn">↑</button>
 <script src="demons-souls-data.js"></script>
 <script>
-const noteBtn = document.getElementById("noteBtn");
-
 const contenuto = document.getElementById("contenuto");
 const search = document.getElementById("search");
 const category = document.getElementById("category");
@@ -704,9 +737,8 @@ overlayImg.onwheel = (event) => {
   overlayImg.style.transform = `scale(${zoom})`;
 };
 
-function apriNote(event, testo) {
-  event.stopPropagation();
-  noteText.textContent = testo;
+function notaInline(testo) {
+  noteText.innerHTML = testo;
   noteOverlay.classList.add("active");
 }
 
@@ -715,20 +747,31 @@ function chiudiNote() {
 }
 
 function apriDettaglio(item) {
-  if (item.note) {
-  noteBtn.style.display = "inline-block";
-  noteBtn.onclick = (e) => apriNote(e, item.note);
-} else {
-  noteBtn.style.display = "none";
-}
+  
   let statoOriginale = false;
 
   detailTitle.textContent = item.nome;
   detailImg.src = item.icona;
-
+  document.querySelector(".sekiro-panel").classList.toggle(
+  "personaggio-panel",
+  item.categoria === "Personaggi"
+);
+  if (item.categoria === "Personaggi" && item.dialoghi) {
+  detailText.innerHTML = `
+    <div class="dialoghi-personaggio">
+      ${item.dialoghi.map(d => `
+        <div class="dialogo-blocco">
+          <h3>${d.momento}</h3>
+          <p>${d.testo}</p>
+        </div>
+      `).join("")}
+    </div>
+  `;
+} else {
   detailText.innerHTML = `
     <p>${item.traduzione || item.note || ""}</p>
   `;
+}
 
   if (item.descrizioneOriginale) {
   showOriginalBtn.style.display = "inline-block";
@@ -748,9 +791,22 @@ function apriDettaglio(item) {
       showOriginalBtn.textContent = "Mostra traduzione";
     } else {
       detailTitle.textContent = item.nome;
-      detailText.innerHTML = `
-        <p>${item.traduzione || item.note || ""}</p>
-      `;
+      if (item.categoria === "Personaggi" && item.dialoghi) {
+  detailText.innerHTML = `
+    <div class="dialoghi-personaggio">
+      ${item.dialoghi.map(d => `
+        <div class="dialogo-blocco">
+          <h3>${d.momento}</h3>
+          <p>${d.testo}</p>
+        </div>
+      `).join("")}
+    </div>
+  `;
+} else {
+  detailText.innerHTML = `
+    <p>${item.traduzione || item.note || ""}</p>
+  `;
+}
       showOriginalBtn.textContent = "Mostra originale";
     }
   };
