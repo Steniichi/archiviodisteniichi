@@ -71,7 +71,7 @@ const traduzioni = [
     nomeOriginale: "楔の神殿",
     letturaOriginale: "kusabi no shinden",
     nomeVecchio: "Nexus",
-    icona: "img/demons_area/ashina_castle.png",
+    icona: "img/demons_area/kusabi.webp",
 	descrizioneOriginale: "要石：<br><br>1. 小国の王の要石<br>2. 穴掘りの王の要石<br>3. 塔の女王の要石<br>4. 影人の司祭の要石<br>5. 貧者の長の要石",
 	traduzione: "Chiavi di Volta:<br><br>1. Chiave di Volta del Re del Piccolo Paese<br>2. Chiave di Volta del Re degli Scavi<br>3. Chiave di Volta della Regina della Torre<br>4. Chiave di Volta del Sacerdote del Popolo Ombre<br>5. Chiave di Volta del Capo dei Poveri",
     note: ""
