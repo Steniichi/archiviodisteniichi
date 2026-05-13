@@ -425,13 +425,22 @@ input, select {
   text-shadow:
     1px 1px 2px #000,
     0 0 7px rgba(0,0,0,0.85);
-  max-height: 360px;
+  max-height: calc(90vh - 330px);
   overflow-y: auto;
   padding-right: 14px;
   max-height: calc(90vh - 260px);
   overflow-y: auto;
   padding-bottom: 20px;
   box-sizing: border-box;
+}
+
+.sekiro-content {
+  height: calc(100% - 150px);
+}
+
+.popup-buttons {
+  background: rgba(0,0,0,0.55);
+  padding-top: 10px;
 }
 
 .sekiro-text::-webkit-scrollbar {
