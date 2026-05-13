@@ -6,7 +6,7 @@ const traduzioni = [
     letturaOriginale: "shiroi sain rōseki",
     nomeVecchio: "Pietra bianca",
     icona: "img/dark1_items/segno_bianco.png",
-    descrizioneOriginale: `オンラインプレイ専用アイテム<br>召喚サインを書く<br><br>サインから他世界に霊体として召喚され<br>召喚されたエリアの主を倒すことができれば<br>人間性を得ることができる<br>（召喚は亡者では行えない）<br><br>時の流れの淀んだロードランの地で<br>不死人たちがお互い助け合うための手段`,
+    descrizioneOriginale: "オンラインプレイ専用アイテム<br>召喚サインを書く<br><br>サインから他世界に霊体として召喚され<br>召喚されたエリアの主を倒すことができれば<br>人間性を得ることができる<br>（召喚は亡者では行えない）<br><br>時の流れの淀んだロードランの地で<br>不死人たちがお互い助け合うための手段",
     traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di lasciare un segno d’evocazione.<br><br>Tramite tale segno, potrai essere evocato come spirito in altri mondi. Se riuscirai a sconfiggere il boss della zona in cui sei stato evocato, otterrai Umanità. I Morti Erranti non possono evocare.<br><br>È uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove lo scorrere del tempo è stagnante.",
     note: ""
   },
