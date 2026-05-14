@@ -18,7 +18,7 @@ const traduzioni = [
     nomeVecchio: "Pietra rossa",
     icona: "img/dark1_items/segno_rosso.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>侵入サインを書く<br>（亡者では使用できない）<br><br>サインから他世界に闇霊として召喚され<br>召喚者を倒せば、人間性を得ることができる<br><br>ダークレイスとして闇に堕ちたものの中にも<br>人の誇りや騎士道を忘れない者たちもいる<br>これは、そうした者たちのための手段である",
-    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di lasciare un segno d'invasione. I Morti Erranti non possono usarlo.<br><br>（Tramite tale segno, potrai essere evocato come spirito oscuro e, se riuscirai a sconfiggere l'evocatore, otterrai Umanità.<br><br>Persino tra coloro che sono sprofondati nell'Oscurità, come i Dark Wraith, vi è chi non ha mai dimenticato l'orgoglio umano e il codice cavalleresco. Questo strumento è destinato a tali individui.",
+    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di lasciare un segno d'invasione. I Morti Erranti non possono usarlo.<br><br>Tramite tale segno, potrai essere evocato come spirito oscuro e, se riuscirai a sconfiggere l'evocatore, otterrai Umanità.<br><br>Persino tra coloro che sono sprofondati nell'Oscurità, come i Dark Wraith, vi è chi non ha mai dimenticato l'orgoglio umano e il codice cavalleresco. Questo strumento è destinato a tali individui.",
     note: ""
   },
   {
