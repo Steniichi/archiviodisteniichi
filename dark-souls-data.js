@@ -81,6 +81,7 @@ const traduzioni = [
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>他の世界に侵入する<br>（亡者では使用できない）<br><br>侵入先の世界で、世界の主を倒せば<br>人間性を得ることができる<br><br>カアスに唆された、ダークレイスたちの業<br>このひび割れた赤いオーブは<br>その業を一時的に真似るためのものである",
     traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di invadere altri mondi. I Morti Erranti non possono usarlo.<br><br>Se sconfiggi il signore del mondo che hai invaso, otterrai Umanità.<br><br>Questo globo rosso incrinato consente di imitare temporaneamente l’arte dei Dark Wraith, sobillati da Kaath."
   },
+/*
   {
     categoria: "Oggetti",
     nome: "",
@@ -91,6 +92,7 @@ const traduzioni = [
     descrizioneOriginale: "",
     traduzione: ""
   },
+*/
   {
     categoria: "Armi",
     nome: "Daga",
