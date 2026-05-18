@@ -72,6 +72,26 @@ const traduzioni = [
     traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Attira spiriti da altri mondi. Può essere usato soltanto da coloro che hanno prestato il Voto e non dai Morti Erranti.<br><br>I nefasti Occhi della Morte seminano calamità negli altri mondi, attirando spiriti destinati a divenire vittime. Coloro che soccombono generano a loro volta altri Occhi della Morte, permettendo così alla calamità di propagarsi."
   },
   {
+    categoria: "Oggetti",
+    nome: "Globo dell'Occhio Rosso Incrinato",
+    nomeOriginale: "ひび割れた赤い瞳のオーブ",
+    letturaOriginale: "hibiwareta Akai Hitomi no Ōbu",
+    nomeVecchio: "Globo Incrinato dell'Occhio Rosso",
+    icona: "img/dark1_items/occhio_incrinato.png",
+    descrizioneOriginale: "オンラインプレイ専用アイテム<br>他の世界に侵入する<br>（亡者では使用できない）<br><br>侵入先の世界で、世界の主を倒せば<br>人間性を得ることができる<br><br>カアスに唆された、ダークレイスたちの業<br>このひび割れた赤いオーブは<br>その業を一時的に真似るためのものである",
+    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di invadere altri mondi. I Morti Erranti non possono usarlo.<br><br>Se sconfiggi il signore del mondo che hai invaso, otterrai Umanità.<br><br>Questo globo rosso incrinato consente di imitare temporaneamente l’arte dei Dark Wraith, sobillati da Kaath."
+  },
+  {
+    categoria: "Oggetti",
+    nome: "",
+    nomeOriginale: "",
+    letturaOriginale: "",
+    nomeVecchio: "",
+    icona: "img/dark1_items/.png",
+    descrizioneOriginale: "",
+    traduzione: ""
+  },
+  {
     categoria: "Armi",
     nome: "Daga",
     nomeOriginale: "ダガー",
