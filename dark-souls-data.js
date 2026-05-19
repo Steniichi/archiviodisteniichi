@@ -75,7 +75,7 @@ const traduzioni = [
     categoria: "Oggetti",
     nome: "Globo dell'Occhio Rosso Incrinato",
     nomeOriginale: "ひび割れた赤い瞳のオーブ",
-    letturaOriginale: "hibiwareta Akai Hitomi no Ōbu",
+    letturaOriginale: "hibiwareta akai hitomi no ōbu",
     nomeVecchio: "Globo Incrinato dell'Occhio Rosso",
     icona: "img/dark1_items/occhio_incrinato.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>他の世界に侵入する<br>（亡者では使用できない）<br><br>侵入先の世界で、世界の主を倒せば<br>人間性を得ることができる<br><br>カアスに唆された、ダークレイスたちの業<br>このひび割れた赤いオーブは<br>その業を一時的に真似るためのものである",
@@ -91,6 +91,16 @@ const traduzioni = [
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>混沌の娘に仕える、従者たちを確認する<br><br>たまご背負いエンジーの管理する<br>彼の姫様、混沌の娘に仕える従者たちの名簿<br>娘に多く人間性を捧げ、その痛みをやわらげた者が<br>エンジーから高い評価を得られるようだ<br><br>…大した意味があるわけではなさそうだが",
     traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di identificare i Servitori della Figlia del Caos.<br><br>Elenco amministrato da Enji il Portatore di Uova, contenente i nomi dei servitori al servizio della sua principessa, la Figlia del Caos. Pare che coloro che offrano una grande quantità di Umanità alla ragazza, alleviandone il dolore, siano tenuti in gran considerazione da Enji.<br><br>Non che significhi molto, però..."
   },
+  {
+    categoria: "Oggetti",
+    nome: "Globo dell'Occhio Blu",
+    nomeOriginale: "青い瞳のオーブ",
+    letturaOriginale: "aoi hitomi no ōbu",
+    nomeVecchio: "Globo dell'Occhio Blu",
+    icona: "img/dark1_items/occhio_blu.png",
+    descrizioneOriginale: `オンラインプレイ専用アイテム<br>罪人録にある罪人たちの世界に侵入し<br>彼らを誅することで「復讐の証」を手に入れる<br>（誓約者のみが使用できる）<br><br>陰の太陽グウィンドリンに仕える<br>暗月の剣の騎士たちに与えられる神秘のオーブ<br>彼らはつまり、神々の復讐の刃なのだ`,
+    traduzione: `Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di invadere il mondo dei peccatori segnati nel Registro dei Peccatori e di ottenere una Prova di Vendetta giustiziandoli. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Questo globo arcano viene conferito ai cavalieri delle Lame della Luna Oscura, al servizio di Gwyndolin, il Sole nell'Ombra. In altre parole, essi sono le lame che incarnano la vendetta degli dèi.`
+  },
 /*
   {
     categoria: "Oggetti",
@@ -99,8 +109,8 @@ const traduzioni = [
     letturaOriginale: "",
     nomeVecchio: "",
     icona: "img/dark1_items/.png",
-    descrizioneOriginale: "",
-    traduzione: ""
+    descrizioneOriginale: ``,
+    traduzione: ``
   },
 */
   {
