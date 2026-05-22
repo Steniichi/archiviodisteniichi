@@ -171,6 +171,16 @@ const traduzioni = [
     descrizioneOriginale: `霊廟の守人、エリザベスの秘薬<br>大型の菌類の類だろうか<br><br>口にすれば肉体を鼓舞し、高揚させ<br>一定時間、ＨＰを大きく回復し続ける<br><br>その強い効果は、戦士の切り札ともなるだろう`,
     traduzione: `Rimedio segreto di Elizabeth, custode del Mausoleo. Che sia una specie di fungo gigante?<br><br>Se ingerito, stimola ed esalta il corpo, rigenerando notevolmente i PV per un certo periodo di tempo.<br><br>I suoi potenti effetti possono diventare la carta vincente di un guerriero.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Benedizione della Dea",
+    nomeOriginale: "女神の祝福",
+    letturaOriginale: "megami no shukufuku",
+    nomeVecchio: "Benedizione Divina",
+    icona: "img/dark1_items/benedizione_dea.png",
+    descrizioneOriginale: `女神グウィネヴィアの祝福の聖水<br>ＨＰを全回復し、異常を癒す<br><br>太陽の光の女神として知られるグウィネヴィアは<br>偉大なる太陽の光の王グウィンの娘であり<br>豊穣と恵みの象徴として、ひろく人々に愛されている`,
+    traduzione: `Acqua santa benedetta dalla dea Gwynevere. Ripristina completamente i PV e cura le alterazioni di stato.<br><br>Gwynevere, nota come la Dea della Luce Solare, è la figlia di Gwyn, il Grande Re della Luce Solare, ed è amata da tutti come simbolo di fertilità e grazia.`
+  },
 /*
   {
     categoria: "Oggetti",
