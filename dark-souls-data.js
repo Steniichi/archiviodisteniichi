@@ -161,6 +161,16 @@ const traduzioni = [
     descrizioneOriginale: `騎士アルトリウスの紋章が刻まれた<br>銀のペンダント<br><br>アノール・ロンドの古い宝具の１つであり<br>深淵に挑む彼に特別に贈られたもの<br><br>使用により深淵の闇<br>特に魔法の類を避ける効果がある`,
     traduzione: `Pendente d'argento su cui vi è inciso lo stemma del Cavaliere Artorius.<br><br>Uno degli antichi tesori sacri di Anor Londo, donato in via eccezionale a colui che sfidava l'Abisso.<br><br>Se usato, offre protezione dall'oscurità dell'Abisso, in particolar modo dalle sue magie.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Rimedio Segreto di Elizabeth",
+    nomeOriginale: "エリザベスの秘薬",
+    letturaOriginale: "erizabesu no hiyaku",
+    nomeVecchio: "Fungo di Elizabeth",
+    icona: "img/dark1_items/rimedio_elizabeth.png",
+    descrizioneOriginale: `霊廟の守人、エリザベスの秘薬<br>大型の菌類の類だろうか<br><br>口にすれば肉体を鼓舞し、高揚させ<br>一定時間、ＨＰを大きく回復し続ける<br><br>その強い効果は、戦士の切り札ともなるだろう`,
+    traduzione: `Rimedio segreto di Elizabeth, custode del Mausoleo. Che sia una specie di fungo gigante?<br><br>Se ingerito, stimola ed esalta il corpo, rigenerando notevolmente i PV per un certo periodo di tempo.<br><br>I suoi potenti effetti possono diventare la carta vincente di un guerriero.`
+  },
 /*
   {
     categoria: "Oggetti",
