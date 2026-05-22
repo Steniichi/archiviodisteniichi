@@ -121,6 +121,16 @@ const traduzioni = [
     descrizioneOriginale: `火防女の死体に残っていた神秘のオーブ<br><br>彼女を殺した者の世界に侵入し<br>その世界の主を倒すことができれば<br>火防女の魂を取り戻せるだろう<br><br>黒い瞳はじっとアノール・ロンドを見つめている`,
     traduzione: `Globo arcano rimasto sul cadavere di una Guardiana del Fuoco.<br><br>Permette di invadere il mondo dell'assassino della Guardiana del Fuoco e, se riuscirai a sconfiggerlo, potresti recuperare la sua anima.<br><br>L'occhio nero è fisso su Anor Londo.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Anello Oscuro",
+    nomeOriginale: "ダークリング",
+    letturaOriginale: "dāku ringu",
+    nomeVecchio: "Segno Oscuro",
+    icona: "img/dark1_items/anello_oscuro.png",
+    descrizioneOriginale: `呪われた不死人の証<br>このリングが現れた者は、死んでも蘇り<br>やがて心をなくした亡者となる<br><br>リングはまた自死の力を持ち<br>使用者は人間性とソウルをすべて失い<br>最後に休息した篝火に戻る`,
+    traduzione: `Marchio di un Immortale maledetto.<br><br>Coloro sui quali appare questo anello possono risorgere dopo la morte, fino a perdere la ragione e diventare Morti Erranti.<br><br>L'anello possiede inoltre il potere della morte autoinflitta. Usandolo, il possessore perderà tutte le anime e l’Umanità in suo possesso, facendo ritorno all’ultimo falò presso cui ha riposato.`
+  },
 /*
   {
     categoria: "Oggetti",
