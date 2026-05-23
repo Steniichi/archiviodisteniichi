@@ -181,6 +181,16 @@ const traduzioni = [
     descrizioneOriginale: `女神グウィネヴィアの祝福の聖水<br>ＨＰを全回復し、異常を癒す<br><br>太陽の光の女神として知られるグウィネヴィアは<br>偉大なる太陽の光の王グウィンの娘であり<br>豊穣と恵みの象徴として、ひろく人々に愛されている`,
     traduzione: `Acqua santa benedetta dalla dea Gwynevere. Ripristina completamente i PV e cura le alterazioni di stato.<br><br>Gwynevere, nota come la Dea della Luce Solare, è la figlia di Gwyn, il Grande Re della Luce Solare, ed è amata da tutti come simbolo di fertilità e grazia.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Fiorerba Verde",
+    nomeOriginale: "緑花草",
+    letturaOriginale: "midori hanakusa",
+    nomeVecchio: "Fiore verde",
+    icona: "img/dark1_items/fiorerba_verde.png",
+    descrizioneOriginale: `大輪の花のような緑の草<br>一時的に、スタミナの回復速度を上げる<br><br>独特の苦味と刺激に特徴のある草本<br>その効果により大量に栽培されることもあるが<br>本来は水辺に自生する一年草である`,
+    traduzione: `Erba verde simile a un grande fiore. Aumenta temporaneamente la velocità di recupero del vigore.<br><br>Pianta erbacea caratterizzata da un sapore amaro e da un effetto stimolante. Per via delle sue proprietà viene coltivata in grandi quantità, ma originariamente è una pianta annuale che cresce spontaneamente presso le rive.`
+  },
 /*
   {
     categoria: "Oggetti",
