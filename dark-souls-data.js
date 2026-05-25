@@ -221,6 +221,16 @@ const traduzioni = [
     descrizioneOriginale: `強い薬効のある花付きの苔玉<br>毒や猛毒の蓄積を減らし、状態を解除する<br><br>猛毒は毒の一種であるが<br>その効果は強く、すぐに死を招く<br><br>花無しは猛毒にまったく無力であり<br>この花苔玉の有無が生死を分けることも多い`,
     traduzione: `Palla di muschio fiorita dalle forti proprietà medicinali. Riduce l'accumulo di veleno e tossicità e ne cura gli effetti.<br><br>La tossicità è un tipo di veleno molto potente che conduce rapidamente alla morte.<br><br>Una palla di muschio non fiorita è del tutto inefficace contro questo tipo di veleno. Essere in possesso di questo rimedio fa spesso la differenza tra la vita e la morte.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Pietra Spezza-Maledizioni",
+    nomeOriginale: "解呪石",
+    letturaOriginale: "kaijuseki",
+    nomeVecchio: "Pietra della Purificazione",
+    icona: "img/dark1_items/pietra_maledizione.png",
+    descrizioneOriginale: `半ば頭骨が溶け込んだ灰色の石<br>カリム伯アルスターの秘宝の１つ<br>呪いの蓄積を減らし、呪死状態を解除する<br><br>人は呪いに対し無力であり<br>それを逸らすことしかできない<br><br>解呪石もまた、呪いを逸らす先でしかなく<br>それは人、ないし人だった何かなのだろう`,
+    traduzione: `Pietra grigia in cui è parzialmente fuso un teschio. Uno dei tesori di Arster, Conte di Carim. Riduce l'accumulo di maledizione e annulla la maledizione mortale.<br><br>Gli esseri umani sono del tutto impotenti contro le maledizioni e non possono fare altro che deviarne gli effetti.<br><br>Le Pietre Spezza-Maledizioni fungono da destinazione per le maledizioni deviate: sono dunque esseri umani... o forse un tempo lo erano?`
+  },
 /*
   {
     categoria: "Oggetti",
