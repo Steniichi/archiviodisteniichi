@@ -251,6 +251,16 @@ const traduzioni = [
     descrizioneOriginale: `弱い魔力を帯びた金属粉<br>右手の武器を修理する<br><br>武器は使用により耐久度が落ちていき<br>一定値以下になるとその効果は大きく落ちる<br><br>修理箱を必要としないこの粉は<br>戦場で武器を修理できる貴重な手段となる`,
     traduzione: `Polvere metallica pervasa da una debole magia. Ripara l'arma nella mano destra.<br><br>La resistenza delle armi diminuisce con l'uso e, quando scende al di sotto di una certa soglia, la loro efficacia si riduce notevolmente.<br><br>Questa polvere è un mezzo prezioso per riparare le armi direttamente sul campo di battaglia, poiché non richiede gli Attrezzi da Riparazione.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Coltello da Lancio",
+    nomeOriginale: "投げナイフ",
+    letturaOriginale: "nage naifu",
+    nomeVecchio: "Coltello da lancio",
+    icona: "img/dark1_items/coltello_lancio.png",
+    descrizioneOriginale: `投擲用のナイフ<br>敵に投げつける<br><br>弓などに比べ飛距離は短く、精度も低いが<br>簡単に間接攻撃ができるアイテム<br><br>これ以外に間接攻撃手段がないようであれば<br>備えとして持っておくのもよいだろう`,
+    traduzione: `Coltello da lancio da scagliare contro i nemici.<br><br>Hanno una portata inferiore e una precisione minore rispetto agli archi, ma consentono di eseguire rapidi attacchi a distanza.<br><br>Se non si dispone di altri mezzi per attaccare a distanza, potrebbe essere una buona idea portarne qualcuno con sé per precauzione.`
+  },
 /*
   {
     categoria: "Oggetti",
