@@ -241,6 +241,16 @@ const traduzioni = [
     descrizioneOriginale: `苦すっぱいドングリ<br>体に寄生したたまごを取り除く<br><br>たまご背負いとは<br>自ら進んで混沌の炎に仕えんとする者たちであり<br>たまごはその象徴である<br><br>故にこのドングリは禁断の実ですらあるが<br>何処にも、禁忌が許される理由はあるものだ`,
     traduzione: `Ghianda dal sapore acre e amaro, in grado di rimuovere dal corpo le uova dei parassiti.<br><br>I portatori di uova sono coloro che hanno scelto di servire la Fiamma del Caos e le uova ne sono il simbolo.<br><br>Dunque, questa ghianda è persino considerata un frutto proibito. Eppure, ovunque esistono ragioni per cui anche i tabù possono essere tollerati.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Polvere di Luce Riparante",
+    nomeOriginale: "修理の光粉",
+    letturaOriginale: "shūri no hikariko",
+    nomeVecchio: "Polvere riparante",
+    icona: "img/dark1_items/polvere_riparante.png",
+    descrizioneOriginale: `弱い魔力を帯びた金属粉<br>右手の武器を修理する<br><br>武器は使用により耐久度が落ちていき<br>一定値以下になるとその効果は大きく落ちる<br><br>修理箱を必要としないこの粉は<br>戦場で武器を修理できる貴重な手段となる`,
+    traduzione: `Polvere metallica pervasa da una debole magia. Ripara l'arma nella mano destra.<br><br>La resistenza delle armi diminuisce con l'uso e, quando scende al di sotto di una certa soglia, la loro efficacia si riduce notevolmente.<br><br>Questa polvere è un mezzo prezioso per riparare le armi direttamente sul campo di battaglia, poiché non richiede gli Attrezzi da Riparazione.`
+  },
 /*
   {
     categoria: "Oggetti",
