@@ -231,6 +231,16 @@ const traduzioni = [
     descrizioneOriginale: `半ば頭骨が溶け込んだ灰色の石<br>カリム伯アルスターの秘宝の１つ<br>呪いの蓄積を減らし、呪死状態を解除する<br><br>人は呪いに対し無力であり<br>それを逸らすことしかできない<br><br>解呪石もまた、呪いを逸らす先でしかなく<br>それは人、ないし人だった何かなのだろう`,
     traduzione: `Pietra grigia in cui è parzialmente fuso un teschio. Uno dei tesori di Arster, Conte di Carim. Riduce l'accumulo di maledizione e annulla la maledizione mortale.<br><br>Gli esseri umani sono del tutto impotenti contro le maledizioni e non possono fare altro che deviarne gli effetti.<br><br>Le Pietre Spezza-Maledizioni fungono da destinazione per le maledizioni deviate: sono dunque esseri umani... o forse un tempo lo erano?`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Purga-Uova",
+    nomeOriginale: "たまごくだし",
+    letturaOriginale: "tamago kudashi",
+    nomeVecchio: "Uovo Vermifugo",
+    icona: "img/dark1_items/purga.png",
+    descrizioneOriginale: `苦すっぱいドングリ<br>体に寄生したたまごを取り除く<br><br>たまご背負いとは<br>自ら進んで混沌の炎に仕えんとする者たちであり<br>たまごはその象徴である<br><br>故にこのドングリは禁断の実ですらあるが<br>何処にも、禁忌が許される理由はあるものだ`,
+    traduzione: `Ghianda dal sapore acre e amaro, in grado di rimuovere dal corpo le uova dei parassiti.<br><br>I portatori di uova sono coloro che hanno scelto di servire la Fiamma del Caos e le uova ne sono il simbolo.<br><br>Dunque, questa ghianda è persino considerata un frutto proibito. Eppure, ovunque esistono ragioni per cui anche i tabù possono essere tollerati.`
+  },
 /*
   {
     categoria: "Oggetti",
