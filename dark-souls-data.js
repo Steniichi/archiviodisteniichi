@@ -211,6 +211,16 @@ const traduzioni = [
     descrizioneOriginale: `薬効のある紫色の苔玉<br>毒の蓄積を減らし、毒状態を解除する<br><br>毒は体に蓄積し、発生すると毒状態となり<br>しばらくの間ダメージを与え続ける<br><br>毒は非常に厄介であり<br>それが予想される場所に向かうのならば<br>この苔玉を用意しておいて損はない`,
     traduzione: `Palla di muschio viola dalle proprietà medicinali. Riduce l'accumulo di veleno e cura l'avvelenamento.<br><br>Il veleno si accumula nel corpo e, quando si verifica, provoca uno stato che infligge danni per un certo periodo di tempo.<br><br>Il veleno è estremamente insidioso e, se ci si dirige verso un luogo in cui si prevede di entrarci in contatto, non ci si perde nulla a portare questa palla di muschio con sé.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Palla di Muschio Viola Fiele Fiorito",
+    nomeOriginale: "毒紫の花苔玉",
+    letturaOriginale: "dokushi no hanakokedama",
+    nomeVecchio: "Muschio rosso fiorito",
+    icona: "img/dark1_items/muschio_fiorito.png",
+    descrizioneOriginale: `強い薬効のある花付きの苔玉<br>毒や猛毒の蓄積を減らし、状態を解除する<br><br>猛毒は毒の一種であるが<br>その効果は強く、すぐに死を招く<br><br>花無しは猛毒にまったく無力であり<br>この花苔玉の有無が生死を分けることも多い`,
+    traduzione: `Palla di muschio fiorita dalle forti proprietà medicinali. Riduce l'accumulo di veleno e tossicità e ne cura gli effetti.<br><br>La tossicità è un tipo di veleno molto potente che conduce rapidamente alla morte.<br><br>Una palla di muschio non fiorita è del tutto inefficace contro questo tipo di veleno. Essere in possesso di questo rimedio fa spesso la differenza tra la vita e la morte.`
+  },
 /*
   {
     categoria: "Oggetti",
