@@ -69,7 +69,7 @@ const traduzioni = [
     nomeVecchio: "Occhio della morte",
     icona: "img/dark1_items/occhio_morte.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>他の世界から霊体を誘い込む<br>（誓約者のみが使用でき、亡者では使用できない）<br><br>禍々しい「死の瞳」は、他の世界に災厄をばら撒き<br>犠牲者となる霊体を誘い込むための手段である<br>犠牲者は「死の瞳」を生み、災厄は更に広がるのだ",
-    traduzione: "Oggetto esclusivo per il gioco online. Attira spiriti da altri mondi. Può essere usato soltanto da coloro che hanno prestato il Voto e non dai Morti Erranti.<br><br>I nefasti Occhi della Morte seminano calamità negli altri mondi, attirando spiriti destinati a divenire vittime. Coloro che soccombono generano a loro volta altri Occhi della Morte, permettendo così alla calamità di propagarsi."
+    traduzione: "Oggetto esclusivo per il gioco online. Attira spiriti da altri mondi. (Può essere usato soltanto da chi ha prestato il Voto e non dai Morti Erranti.)<br><br>I nefasti Occhi della Morte seminano calamità negli altri mondi, attirando spiriti destinati a divenire vittime. Coloro che soccombono generano a loro volta altri Occhi della Morte, permettendo così alla calamità di dilagare."
   },
   {
     categoria: "Oggetti",
@@ -79,7 +79,7 @@ const traduzioni = [
     nomeVecchio: "Globo Incrinato dell'Occhio Rosso",
     icona: "img/dark1_items/occhio_incrinato.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>他の世界に侵入する<br>（亡者では使用できない）<br><br>侵入先の世界で、世界の主を倒せば<br>人間性を得ることができる<br><br>カアスに唆された、ダークレイスたちの業<br>このひび割れた赤いオーブは<br>その業を一時的に真似るためのものである",
-    traduzione: "Oggetto esclusivo per il gioco online. Permette di invadere altri mondi. I Morti Erranti non possono usarlo.<br><br>Se sconfiggi il signore del mondo che hai invaso, otterrai Umanità.<br><br>Questo globo rosso incrinato consente di imitare temporaneamente l’arte dei Dark Wraith, sobillati da Kaath."
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di invadere altri mondi. (I Morti Erranti non possono usarlo.)<br><br>Se riuscirai a sconfiggere il padrone del mondo che hai invaso, otterrai Umanità.<br><br>Questa è l'arte dei Dark Wraith, sobillati da Kaath. Questo globo rosso incrinato consente di imitarla temporaneamente."
   },
   {
     categoria: "Oggetti",
@@ -89,7 +89,7 @@ const traduzioni = [
     nomeVecchio: "Registro dei Servitori",
     icona: "img/dark1_items/registro_servitori.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>混沌の娘に仕える、従者たちを確認する<br><br>たまご背負いエンジーの管理する<br>彼の姫様、混沌の娘に仕える従者たちの名簿<br>娘に多く人間性を捧げ、その痛みをやわらげた者が<br>エンジーから高い評価を得られるようだ<br><br>…大した意味があるわけではなさそうだが",
-    traduzione: "Oggetto esclusivo per il gioco online. Permette di identificare i Servitori della Figlia del Caos.<br><br>Elenco amministrato da Enji il Portatore di Uova, contenente i nomi dei servitori al servizio della sua principessa, la Figlia del Caos. Pare che coloro che offrano una grande quantità di Umanità alla ragazza, alleviandone il dolore, siano tenuti in gran considerazione da Enji.<br><br>Non che significhi molto, però..."
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di identificare i Servitori della Figlia del Caos.<br><br>Elenco amministrato da Enji il Portatore di Uova, contenente i nomi dei servitori della sua principessa, la Figlia del Caos. Pare che coloro che offrano una grande quantità di Umanità alla ragazza, alleviandone il dolore, siano tenuti in gran considerazione da Enji.<br><br>Non che significhi molto, però..."
   },
   {
     categoria: "Oggetti",
@@ -99,7 +99,7 @@ const traduzioni = [
     nomeVecchio: "Globo dell'Occhio Blu",
     icona: "img/dark1_items/occhio_blu.png",
     descrizioneOriginale: `オンラインプレイ専用アイテム<br>罪人録にある罪人たちの世界に侵入し<br>彼らを誅することで「復讐の証」を手に入れる<br>（誓約者のみが使用できる）<br><br>陰の太陽グウィンドリンに仕える<br>暗月の剣の騎士たちに与えられる神秘のオーブ<br>彼らはつまり、神々の復讐の刃なのだ`,
-    traduzione: `Oggetto esclusivo per il gioco online. Permette di invadere il mondo dei peccatori segnati nel Registro dei Peccatori e di ottenere una Prova di Vendetta giustiziandoli. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Questo globo arcano viene conferito ai cavalieri delle Lame della Luna Oscura, al servizio di Gwyndolin, il Sole nell'Ombra. In altre parole, essi sono le lame che incarnano la vendetta degli dèi.`
+    traduzione: `Oggetto esclusivo per il gioco online. Permette di invadere il mondo dei peccatori segnati nel Registro dei Peccatori e di ottenere una Prova di Vendetta giustiziandoli. (Può essere usato soltanto da chi ha prestato il Voto.)<br><br>Questo globo arcano viene conferito ai cavalieri delle Lame della Luna Oscura, al servizio di Gwyndolin, il Sole nell'Ombra. Essi sono, in altre parole, le lame della vendetta degli dèi.`
   },
   {
     categoria: "Oggetti",
