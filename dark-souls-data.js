@@ -169,7 +169,7 @@ const traduzioni = [
     nomeVecchio: "Fungo di Elizabeth",
     icona: "img/dark1_items/rimedio_elizabeth.png",
     descrizioneOriginale: `霊廟の守人、エリザベスの秘薬<br>大型の菌類の類だろうか<br><br>口にすれば肉体を鼓舞し、高揚させ<br>一定時間、ＨＰを大きく回復し続ける<br><br>その強い効果は、戦士の切り札ともなるだろう`,
-    traduzione: `Rimedio segreto di Elizabeth, custode del Mausoleo. Che sia una specie di fungo gigante?<br><br>Se ingerito, stimola ed esalta il corpo, rigenerando notevolmente i PV per un certo periodo di tempo.<br><br>I suoi potenti effetti possono diventare la carta vincente di un guerriero.`
+    traduzione: `Rimedio segreto di Elizabeth, custode del Mausoleo. Che sia una specie di fungo gigante?<br><br>Se ingerito, stimola ed esalta il corpo, rigenerando notevolmente i PV per un certo periodo di tempo.<br><br>I suoi potenti effetti possono rivelarsi la carta vincente di un guerriero.`
   },
   {
     categoria: "Oggetti",
@@ -179,7 +179,7 @@ const traduzioni = [
     nomeVecchio: "Benedizione Divina",
     icona: "img/dark1_items/benedizione_dea.png",
     descrizioneOriginale: `女神グウィネヴィアの祝福の聖水<br>ＨＰを全回復し、異常を癒す<br><br>太陽の光の女神として知られるグウィネヴィアは<br>偉大なる太陽の光の王グウィンの娘であり<br>豊穣と恵みの象徴として、ひろく人々に愛されている`,
-    traduzione: `Acqua santa benedetta dalla dea Gwynevere. Ripristina completamente i PV e cura le alterazioni di stato.<br><br>Gwynevere, nota come la Dea della Luce Solare, è la figlia di Gwyn, il Grande Re della Luce Solare, ed è amata da tutti come simbolo di fertilità e grazia.`
+    traduzione: `Acqua santa benedetta dalla dea Gwynevere. Ripristina completamente i PV e cura le alterazioni di stato.<br><br>Gwynevere, nota come la Dea della Luce Solare, è la figlia di Gwyn, il Grande Re della Luce Solare, ed è amata da ogni gente come simbolo di fertilità e grazia.`
   },
   {
     categoria: "Oggetti",
@@ -189,7 +189,7 @@ const traduzioni = [
     nomeVecchio: "Fiore verde",
     icona: "img/dark1_items/fiorerba_verde.png",
     descrizioneOriginale: `大輪の花のような緑の草<br>一時的に、スタミナの回復速度を上げる<br><br>独特の苦味と刺激に特徴のある草本<br>その効果により大量に栽培されることもあるが<br>本来は水辺に自生する一年草である`,
-    traduzione: `Erba verde simile a un grande fiore. Aumenta temporaneamente la velocità di recupero del vigore.<br><br>Pianta erbacea caratterizzata da un sapore amaro e da un effetto stimolante. Per via delle sue proprietà viene coltivata in grandi quantità, ma originariamente è una pianta annuale che cresce spontaneamente presso le rive.`
+    traduzione: `Erba verde simile a un grande fiore. Aumenta temporaneamente la velocità di recupero del Vigore.<br><br>Pianta erbacea caratterizzata da un sapore amaro e da un effetto stimolante. Per via delle sue proprietà viene coltivata in grandi quantità, ma originariamente è una pianta annuale che cresce spontaneamente presso le rive.`
   },
   {
     categoria: "Oggetti",
