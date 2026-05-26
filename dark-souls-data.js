@@ -7,7 +7,7 @@ const traduzioni = [
     nomeVecchio: "Pietra bianca",
     icona: "img/dark1_items/segno_bianco.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>召喚サインを書く<br><br>サインから他世界に霊体として召喚され<br>召喚されたエリアの主を倒すことができれば<br>人間性を得ることができる<br>（召喚は亡者では行えない）<br><br>時の流れの淀んだロードランの地で<br>不死人たちがお互い助け合うための手段",
-    traduzione: "Oggetto esclusivo per il gioco online. Permette di tracciare un Segno d'Evocazione.<br><br>Tramite tale segno, potrai essere evocato come spirito in altri mondi. Se riuscirai a sconfiggere il signore della zona in cui sei stato evocato, otterrai Umanità. (I Morti Erranti non possono evocare.)<br><br>Uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove il fluire del tempo ristagna.",
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di tracciare un Segno d'Evocazione.<br><br>Tramite tale segno, potrai essere evocato come spirito in altri mondi. Se riuscirai a sconfiggere il boss della zona in cui sei stato evocato, otterrai Umanità. (I Morti Erranti non possono evocare.)<br><br>Uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove lo scorrere del tempo ristagna.",
     note: ""
   },
   {
@@ -49,7 +49,7 @@ const traduzioni = [
     nomeVecchio: "Pietra arancione",
     icona: "img/dark1_items/pietra_arancione.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>メッセージを書く／確認する／評価する<br><br>メッセージは他世界に送られ、評価される<br>他世界からのメッセージを評価することもできる<br><br>時の流れの淀んだロードランの地で<br>不死人たちがお互い支え合うための手段であり<br>また、騙し合うための手段でもある",
-    traduzione: "Oggetto esclusivo per il gioco online. Permette di scrivere, consultare e valutare messaggi.<br><br>I messaggi vengono inviati in altri mondi e possono essere valutati; è possibile fare altrettanto con quelli ricevuti.<br><br>Uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove il fluire del tempo ristagna... ma anche uno strumento con cui possono ingannarsi reciprocamente."
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di scrivere, consultare e valutare messaggi.<br><br>I messaggi vengono inviati in altri mondi e possono essere valutati; è possibile fare altrettanto con quelli ricevuti.<br><br>Uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove lo scorrere del tempo ristagna... ma anche uno strumento con cui possono ingannarsi reciprocamente."
   },
   {
     categoria: "Oggetti",
@@ -199,7 +199,7 @@ const traduzioni = [
     nomeVecchio: "Muschio rossosangue",
     icona: "img/dark1_items/muschio_rosso.png",
     descrizioneOriginale: `薬効のある赤色の苔玉<br>出血の蓄積を減らす<br><br>出血は、鋭い刃やトゲの攻撃により蓄積し<br>発生すると大きなダメージとなる<br>そうなる前に、この苔玉を使うとよい`,
-    traduzione: `Palla di muschio rosso dalle proprietà medicinali. Riduce l'accumulo di sanguinamento.<br><br>Il sanguinamento si accumula attraverso gli attacchi di lame affilate o spinose e, quando si verifica, provoca danni ingenti. Meglio usarla prima che ciò accada.`
+    traduzione: `Palla di muschio rosso dalle proprietà medicinali. Riduce l'accumulo di Sanguinamento.<br><br>Il Sanguinamento si accumula attraverso gli attacchi di lame affilate o spinose e, quando si verifica, provoca danni ingenti. Meglio usarla prima che ciò accada.`
   },
   {
     categoria: "Oggetti",
@@ -209,7 +209,7 @@ const traduzioni = [
     nomeVecchio: "Muschio purpureo",
     icona: "img/dark1_items/muschio_viola.png",
     descrizioneOriginale: `薬効のある紫色の苔玉<br>毒の蓄積を減らし、毒状態を解除する<br><br>毒は体に蓄積し、発生すると毒状態となり<br>しばらくの間ダメージを与え続ける<br><br>毒は非常に厄介であり<br>それが予想される場所に向かうのならば<br>この苔玉を用意しておいて損はない`,
-    traduzione: `Palla di muschio viola dalle proprietà medicinali. Riduce l'accumulo di veleno e cura l'avvelenamento.<br><br>Il veleno si accumula nel corpo fino a causare avvelenamento, infliggendo danni per un certo periodo.<br><br>Il veleno è estremamente insidioso: se ci si dirige verso un luogo in cui si prevede di incontrarlo, portare questa palla di muschio non guasta.`
+    traduzione: `Palla di muschio viola dalle proprietà medicinali. Riduce l'accumulo di veleno e cura l'Avvelenamento.<br><br>Il veleno si accumula nel corpo fino a causare Avvelenamento, infliggendo danni per un certo periodo.<br><br>Il veleno è estremamente insidioso: se ci si dirige verso un luogo in cui si prevede di incontrarlo, portare questa palla di muschio non guasta.`
   },
   {
     categoria: "Oggetti",
@@ -219,7 +219,7 @@ const traduzioni = [
     nomeVecchio: "Muschio rosso fiorito",
     icona: "img/dark1_items/muschio_fiorito.png",
     descrizioneOriginale: `強い薬効のある花付きの苔玉<br>毒や猛毒の蓄積を減らし、状態を解除する<br><br>猛毒は毒の一種であるが<br>その効果は強く、すぐに死を招く<br><br>花無しは猛毒にまったく無力であり<br>この花苔玉の有無が生死を分けることも多い`,
-    traduzione: `Palla di muschio fiorita dalle forti proprietà medicinali. Riduce l'accumulo di veleno e tossicità e ne cura gli effetti.<br><br>La tossicità è un tipo di veleno molto potente che conduce rapidamente alla morte.<br><br>Una palla di muschio non fiorita è del tutto inefficace contro questo tipo di veleno. Essere in possesso di questo rimedio fa spesso la differenza tra la vita e la morte.`
+    traduzione: `Palla di muschio fiorita dalle forti proprietà medicinali. Riduce l'accumulo di veleno e tossina e ne cura gli effetti.<br><br>La tossina è una variante di veleno, ma i suoi effetti sono talmente intensi da condurre rapidamente alla morte.<br><br>Una palla di muschio non fiorita è del tutto inefficace contro di essa. Spesso è questa palla di muschio a separare la vita dalla morte.`
   },
   {
     categoria: "Oggetti",
@@ -229,7 +229,7 @@ const traduzioni = [
     nomeVecchio: "Pietra della Purificazione",
     icona: "img/dark1_items/pietra_maledizione.png",
     descrizioneOriginale: `半ば頭骨が溶け込んだ灰色の石<br>カリム伯アルスターの秘宝の１つ<br>呪いの蓄積を減らし、呪死状態を解除する<br><br>人は呪いに対し無力であり<br>それを逸らすことしかできない<br><br>解呪石もまた、呪いを逸らす先でしかなく<br>それは人、ないし人だった何かなのだろう`,
-    traduzione: `Pietra grigia in cui è parzialmente fuso un teschio. Uno dei tesori di Arster, Conte di Carim. Riduce l'accumulo di maledizione e annulla la maledizione mortale.<br><br>Gli esseri umani sono del tutto impotenti contro le maledizioni e non possono fare altro che deviarne gli effetti.<br><br>Le Pietre Spezza-Maledizioni fungono da destinazione per le maledizioni deviate: sono dunque esseri umani... o forse un tempo lo erano?`
+    traduzione: `"Pietra grigia in cui è parzialmente fuso un teschio. Uno dei tesori nascosti di Arster, Conte di Carim. Riduce l'accumulo di maledizione e annulla la Maledizione Mortale.<br><br>Gli umani sono impotenti contro le maledizioni e non possono fare altro che deviarne gli effetti.<br><br>Le Pietre Spezza-Maledizioni fungono da destinazione per le maledizioni deviate: sono dunque umani... o forse un tempo lo erano?"`
   },
   {
     categoria: "Oggetti",
@@ -239,7 +239,7 @@ const traduzioni = [
     nomeVecchio: "Uovo Vermifugo",
     icona: "img/dark1_items/purga.png",
     descrizioneOriginale: `苦すっぱいドングリ<br>体に寄生したたまごを取り除く<br><br>たまご背負いとは<br>自ら進んで混沌の炎に仕えんとする者たちであり<br>たまごはその象徴である<br><br>故にこのドングリは禁断の実ですらあるが<br>何処にも、禁忌が許される理由はあるものだ`,
-    traduzione: `Ghianda dal sapore acre e amaro, in grado di rimuovere dal corpo le uova dei parassiti.<br><br>I portatori di uova sono coloro che hanno scelto di servire la Fiamma del Caos e le uova ne sono il simbolo.<br><br>Dunque, questa ghianda è persino considerata un frutto proibito. Eppure, ovunque esistono ragioni per cui anche i tabù possono essere tollerati.`
+    traduzione: `Ghianda aspra e amara, in grado di rimuovere dal corpo le uova parassite.<br><br>I Portatori di Uova sono coloro che hanno scelto di servire la Fiamma del Caos e le uova ne sono il simbolo.<br><br>Dunque, questa ghianda è addirittura un frutto proibito per loro, ma ogni tabù ha le sue ragioni.`
   },
   {
     categoria: "Oggetti",
@@ -249,7 +249,7 @@ const traduzioni = [
     nomeVecchio: "Polvere riparante",
     icona: "img/dark1_items/polvere_riparante.png",
     descrizioneOriginale: `弱い魔力を帯びた金属粉<br>右手の武器を修理する<br><br>武器は使用により耐久度が落ちていき<br>一定値以下になるとその効果は大きく落ちる<br><br>修理箱を必要としないこの粉は<br>戦場で武器を修理できる貴重な手段となる`,
-    traduzione: `Polvere metallica pervasa da una debole magia. Ripara l'arma nella mano destra.<br><br>La resistenza delle armi diminuisce con l'uso e, quando scende al di sotto di una certa soglia, la loro efficacia si riduce notevolmente.<br><br>Questa polvere è un mezzo prezioso per riparare le armi direttamente sul campo di battaglia, poiché non richiede gli Attrezzi da Riparazione.`
+    traduzione: `Polvere metallica pervasa da una debole magia. Ripara l'arma nella mano destra.<br><br>La resistenza delle armi diminuisce con l'uso e, quando scende al di sotto di una certa soglia, la loro efficacia si riduce notevolmente.<br><br>Non richiedendo gli Attrezzi da Riparazione, questa polvere è un mezzo prezioso per riparare le armi sul campo di battaglia.`
   },
   {
     categoria: "Oggetti",
@@ -259,7 +259,7 @@ const traduzioni = [
     nomeVecchio: "Coltello da lancio",
     icona: "img/dark1_items/coltello_lancio.png",
     descrizioneOriginale: `投擲用のナイフ<br>敵に投げつける<br><br>弓などに比べ飛距離は短く、精度も低いが<br>簡単に間接攻撃ができるアイテム<br><br>これ以外に間接攻撃手段がないようであれば<br>備えとして持っておくのもよいだろう`,
-    traduzione: `Coltello da lancio da scagliare contro i nemici.<br><br>Rispetto agli archi e simili, la gittata è minore e la precisione inferiore, ma consentono di sferrare attacchi a distanza con facilità.<br><br>Se non si dispone di altri mezzi per attaccare a distanza, potrebbe valere la pena tenerne qualcuno con sé come scorta..`
+    traduzione: `Coltello da lancio da scagliare contro i nemici.<br><br>Rispetto agli archi e simili, la gittata è minore e la precisione inferiore, ma consentono di sferrare attacchi a distanza con facilità.<br><br>Se non si hanno altri mezzi per attaccare a distanza, potrebbe valere la pena tenerne qualcuno con sé per precauzione.`
   },
 /*
   {
