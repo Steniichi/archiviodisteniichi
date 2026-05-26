@@ -198,8 +198,8 @@ const traduzioni = [
     letturaOriginale: "chiaka no kokedama",
     nomeVecchio: "Muschio rossosangue",
     icona: "img/dark1_items/muschio_rosso.png",
-    descrizioneOriginale: `Palla di muschio rosso dalle proprietà medicinali. Riduce l'accumulo di sanguinamento.<br><br>Il sanguinamento si accumula attraverso gli attacchi di lame affilate o spinose e, quando si verifica, provoca danni ingenti. È bene usare questa palla di muschio prima che ciò accada.`,
-    traduzione: `薬効のある赤色の苔玉<br>出血の蓄積を減らす<br><br>出血は、鋭い刃やトゲの攻撃により蓄積し<br>発生すると大きなダメージとなる<br>そうなる前に、この苔玉を使うとよい`
+    descrizioneOriginale: `薬効のある赤色の苔玉<br>出血の蓄積を減らす<br><br>出血は、鋭い刃やトゲの攻撃により蓄積し<br>発生すると大きなダメージとなる<br>そうなる前に、この苔玉を使うとよい`,
+    traduzione: `Palla di muschio rosso dalle proprietà medicinali. Riduce l'accumulo di sanguinamento.<br><br>Il sanguinamento si accumula attraverso gli attacchi di lame affilate o spinose e, quando si verifica, provoca danni ingenti. Meglio usarla prima che ciò accada.`
   },
   {
     categoria: "Oggetti",
@@ -209,7 +209,7 @@ const traduzioni = [
     nomeVecchio: "Muschio purpureo",
     icona: "img/dark1_items/muschio_viola.png",
     descrizioneOriginale: `薬効のある紫色の苔玉<br>毒の蓄積を減らし、毒状態を解除する<br><br>毒は体に蓄積し、発生すると毒状態となり<br>しばらくの間ダメージを与え続ける<br><br>毒は非常に厄介であり<br>それが予想される場所に向かうのならば<br>この苔玉を用意しておいて損はない`,
-    traduzione: `Palla di muschio viola dalle proprietà medicinali. Riduce l'accumulo di veleno e cura l'avvelenamento.<br><br>Il veleno si accumula nel corpo e, quando si verifica, provoca uno stato che infligge danni per un certo periodo di tempo.<br><br>Il veleno è estremamente insidioso e, se ci si dirige verso un luogo in cui si prevede di entrarci in contatto, non ci si perde nulla a portare questa palla di muschio con sé.`
+    traduzione: `Palla di muschio viola dalle proprietà medicinali. Riduce l'accumulo di veleno e cura l'avvelenamento.<br><br>Il veleno si accumula nel corpo fino a causare avvelenamento, infliggendo danni per un certo periodo.<br><br>Il veleno è estremamente insidioso: se ci si dirige verso un luogo in cui si prevede di incontrarlo, portare questa palla di muschio non guasta.`
   },
   {
     categoria: "Oggetti",
