@@ -109,7 +109,7 @@ const traduzioni = [
     nomeVecchio: "Occhio del Drago",
     icona: "img/dark1_items/occhio_drago.png",
     descrizioneOriginale: `オンラインプレイ専用アイテム<br>他世界で「竜のウロコ」を得た者を探し出し<br>その世界に侵入して「竜のウロコ」を奪う<br>（誓約者のみが使用できる）<br><br>古竜に祈り、それに近づこうとする超越者たちの業<br>生とは弱さであり、火の者である神々も例外ではない<br>超越者の目標は、生命とは別のあり様なのだ`,
-    traduzione: `Oggetto esclusivo per il gioco online. Permette di individuare coloro che possiedono le Scaglie di Drago e di invadere il loro mondo per sottrargliele. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Arte dei Trascendenti, che pregano gli Antichi Draghi nel tentativo di avvicinarsi a essi. La vita è debolezza, e persino gli dèi, esseri del Fuoco, non fanno eccezione. L'obiettivo dei Trascendenti è raggiungere una forma d’esistenza distinta dalla vita stessa.`
+    traduzione: `Oggetto esclusivo per il gioco online. Permette di individuare coloro che possiedono le Scaglie di Drago e di invadere il loro mondo per sottrargliele. (Può essere usato soltanto da chi ha prestato il Voto.)<br><br>Arte dei Trascendenti, che pregano gli Antichi Draghi nel tentativo di avvicinarsi a essi. La vita è debolezza, e persino gli dèi, esseri del Fuoco, non fanno eccezione. L'obiettivo dei Trascendenti è raggiungere una forma d’esistenza distinta dalla vita stessa.`
   },
   {
     categoria: "Oggetti",
