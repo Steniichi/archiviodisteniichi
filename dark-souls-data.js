@@ -139,7 +139,7 @@ const traduzioni = [
     nomeVecchio: "Pietra viola",
     icona: "img/dark1_items/ametista_codardi.png",
     descrizioneOriginale: `"オンラインプレイ専用アイテム<br>「試練の戦い」から離脱する<br>（ホストが離脱するとセッションは解散する）<br><br>その戦いは古来アノール・ロンドへの道であり<br>既に管理者なく、その本分が失われた今でも<br>離脱するものは臆病者の誹りを免れない<br><br>故に、この紫水晶は軽々に使用すべきでない<br>仮りそめでも、戦いに意味を求めるならば"`,
-    traduzione: `Oggetto esclusivo per il gioco online. Permette di ritirarsi da una Battaglia del Giudizio. (Se l'host si ritira, la sessione verrà interrotta.)<br><br>Fin dall'antichità, queste battaglie erano la via per raggiungere Anor Londo. Anche ora che sono rimaste senza supervisione e hanno smarrito il loro scopo, chi si ritira non può sfuggire all'onta della viltà.<br><br>Dunque, se desideri attribuire un significato a queste battaglie, per quanto ormai siano soltanto una farsa, non dovresti usare quest'ametista con leggerezza.`
+    traduzione: `Oggetto esclusivo per il gioco online. Permette di ritirarsi da una Battaglia del Giudizio. (Se l'host si ritira, la sessione verrà interrotta.)<br><br>Fin dall'antichità, queste battaglie erano la via per raggiungere Anor Londo. Anche ora che sono rimaste senza supervisione e hanno smarrito il loro scopo, chi si ritira non può sfuggire all'onta della codardia.<br><br>Dunque, se desideri attribuire un significato a queste battaglie, per quanto ormai siano soltanto una farsa, non dovresti usare quest'ametista con leggerezza.`
   },
   {
     categoria: "Oggetti",
@@ -149,7 +149,7 @@ const traduzioni = [
     nomeVecchio: "Fiaschetta Estus",
     icona: "img/dark1_items/est.png",
     descrizioneOriginale: `不死人の宝たる鈍い緑ガラスの瓶<br>篝火でエストを溜め、飲んでＨＰを回復する<br><br>篝火の守り手、火防女と深い関わりがあるようで<br>暗い伝承にはこんな一説がある<br><br>　火防女の魂から、その緑瓶は生まれる<br>　彼女たちは、生きて篝火を守り<br>　死してなお、その熱を守り続けるのだ`,
-    traduzione: `Fiaschetta di vetro verde opaco, tesoro degli Immortali. L’Est può essere accumulato presso i falò e bevuto per ripristinare i PV.<br><br>Pare condivida un profondo legame con le Guardiane del Fuoco, custodi dei falò. Una cupa leggenda narra:<br><br>"Le fiaschette verdi nascono dalle anime delle Guardiane del Fuoco. Esse vivono per custodire i falò e continuano a preservarne il calore persino dopo la morte."`
+    traduzione: `Fiaschetta di vetro verde opaco, tesoro degli Immortali. L’Est può essere accumulato presso i falò e bevuto per ripristinare i PV.<br><br>Pare condivida un profondo legame con le Guardiane del Fuoco, custodi dei falò. Una cupa leggenda narra:<br><br>«Le fiaschette verdi nascono dalle anime delle Guardiane del Fuoco. Esse vivono per custodire i falò e continuano a preservarne il calore persino dopo la morte.»"`
   },
   {
     categoria: "Oggetti",
@@ -159,7 +159,7 @@ const traduzioni = [
     nomeVecchio: "Pendente d'argento",
     icona: "img/dark1_items/pendente_argento.png",
     descrizioneOriginale: `騎士アルトリウスの紋章が刻まれた<br>銀のペンダント<br><br>アノール・ロンドの古い宝具の１つであり<br>深淵に挑む彼に特別に贈られたもの<br><br>使用により深淵の闇<br>特に魔法の類を避ける効果がある`,
-    traduzione: `Pendente d'argento su cui vi è inciso lo stemma del Cavaliere Artorius.<br><br>Uno degli antichi tesori sacri di Anor Londo, donato in via eccezionale a colui che sfidava l'Abisso.<br><br>Se usato, offre protezione dall'oscurità dell'Abisso, in particolar modo dalle sue magie.`
+    traduzione: `Pendente d'argento su cui è inciso lo stemma del Cavaliere Artorius.<br><br>Uno degli antichi cimeli di Anor Londo, concesso eccezionalmente a colui che sfidava l'Abisso.<br><br>Se usato, offre protezione dall'Oscurità dell'Abisso, in particolar modo dalle sue magie.`
   },
   {
     categoria: "Oggetti",
